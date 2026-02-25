@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Opentechiz - Get a Free Engineering Consultation</title>
+  <meta name="description" content="Contact Opentechiz to discuss your project. We offer free engineering consultations for ecommerce platforms, scalable product builds, and AI-driven solutions.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://opentechiz.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://opentechiz.com/contact.html">
+  <meta property="og:title" content="Contact Us | Opentechiz - Free Engineering Consultation">
+  <meta property="og:description" content="Reach out to Opentechiz to start your next scalable digital platform project. Free consultation available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Opentechiz Home">
+          <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="18" cy="18" r="17" stroke="#4ade80" stroke-width="2"/>
+            <circle cx="18" cy="18" r="8" fill="#4ade80" fill-opacity="0.15"/>
+            <circle cx="18" cy="18" r="4" fill="#4ade80"/>
+            <circle cx="18" cy="6" r="2.5" fill="#4ade80" fill-opacity="0.7"/>
+          </svg>
+          <span class="logo-text">OPEN<span>techiz</span></span>
+        </a>
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta" style="background: var(--accent-dark);">Get in Touch</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>›</span><span>Contact</span>
+      </nav>
+      <span class="section-label">Get in Touch</span>
+      <h1 class="page-hero-title">Let's Build Your Next<br>Scalable Digital Platform</h1>
+      <p class="page-hero-desc">
+        Tell us about your project and we'll schedule a free consultation to discuss the right
+        engineering approach for your needs. No obligations, no sales pitch — just honest technical advice.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div>
+          <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">Send Us a Message</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 0.9rem;">
+            We typically respond within 1 business day.
+          </p>
+
+          <form id="contactForm" novalidate>
+            <div class="grid-2" style="gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Work Email *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="company">Company</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="Your Company Name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Service Interest</label>
+              <select class="form-input form-select" id="service" name="service">
+                <option value="" disabled selected>Select a service...</option>
+                <option value="ecommerce">Ecommerce Platform (Magento / Shopify / Drupal)</option>
+                <option value="product-engineering">Scalable Product Engineering</option>
+                <option value="ai-driven">AI-Driven Enhancements</option>
+                <option value="dedicated-team">Dedicated Engineering Team</option>
+                <option value="consulting">Technical Architecture Consulting</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us About Your Project *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Describe your project, current challenges, and what you'd like to achieve..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="budget">Estimated Budget Range</label>
+              <select class="form-input form-select" id="budget" name="budget">
+                <option value="" disabled selected>Select a range...</option>
+                <option value="under-20k">Under $20,000</option>
+                <option value="20k-50k">$20,000 – $50,000</option>
+                <option value="50k-100k">$50,000 – $100,000</option>
+                <option value="100k-250k">$100,000 – $250,000</option>
+                <option value="250k+">$250,000+</option>
+                <option value="ongoing">Ongoing (dedicated team)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 16px;">
+              Send Message
+            </button>
+
+            <p class="form-success" id="formSuccess">
+              ✓ Thank you! We'll be in touch within 1 business day.
+            </p>
+          </form>
+        </div>
+
+        <!-- INFO SIDEBAR -->
+        <div>
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Contact Information</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉</div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <p class="contact-info-value">
+                  <a href="mailto:hoanv@opentechiz.com">hoanv@opentechiz.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🌐</div>
+              <div>
+                <p class="contact-info-label">Website</p>
+                <p class="contact-info-value">
+                  <a href="https://opentechiz.com" target="_blank" rel="noopener">opentechiz.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <p class="contact-info-label">Markets Served</p>
+                <p class="contact-info-value">Europe · Australia · United States</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⏱</div>
+              <div>
+                <p class="contact-info-label">Response Time</p>
+                <p class="contact-info-value">Within 1 business day</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WHAT TO EXPECT -->
+          <div class="card" style="margin-top: 20px; border-top: 3px solid var(--accent);">
+            <h3 class="card-title" style="margin-bottom: 16px;">What happens next?</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">1</span>
+                <span>We review your message and assign the right engineering expert for your domain.</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">2</span>
+                <span>We schedule a 30-minute discovery call to understand your requirements.</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">3</span>
+                <span>We prepare a tailored technical proposal and engagement recommendation.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY OPENTECHIZ -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Why Work With Us</span>
+        <h2 class="section-title">The Opentechiz difference</h2>
+        <span class="accent-line" style="display: block; margin: 20px auto 0;"></span>
+      </div>
+      <div class="grid-3">
+        <div class="card card-accent reveal">
+          <div class="capability-icon">🧠</div>
+          <h3 class="card-title">Deep Technical Expertise</h3>
+          <p class="card-text">70 engineers with specializations in ecommerce, real-time systems, cloud-native architecture, and applied AI — not generalists.</p>
+        </div>
+        <div class="card card-accent reveal reveal-delay-2">
+          <div class="capability-icon">🤝</div>
+          <h3 class="card-title">Partnership Model</h3>
+          <p class="card-text">We work as an extension of your team, not a remote vendor. Transparent communication, shared tools, and aligned incentives.</p>
+        </div>
+        <div class="card card-accent reveal reveal-delay-3">
+          <div class="capability-icon">📈</div>
+          <h3 class="card-title">Proven at Scale</h3>
+          <p class="card-text">Our work has powered global brands handling millions of users and transactions — we understand what it takes to perform at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="18" cy="18" r="17" stroke="#4ade80" stroke-width="2"/>
+              <circle cx="18" cy="18" r="8" fill="#4ade80" fill-opacity="0.15"/>
+              <circle cx="18" cy="18" r="4" fill="#4ade80"/>
+              <circle cx="18" cy="6" r="2.5" fill="#4ade80" fill-opacity="0.7"/>
+            </svg>
+            <span class="logo-text">OPEN<span>techiz</span></span>
+          </a>
+          <p>Scalable Platform &amp; AI Engineering Partner. Building digital products that grow with your business.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Services</p>
+          <ul class="footer-links">
+            <li><a href="services.html">Ecommerce Platforms</a></li>
+            <li><a href="services.html">Product Engineering</a></li>
+            <li><a href="services.html">AI-Driven Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Technology</p>
+          <ul class="footer-links">
+            <li><a href="technology.html">Frontend &amp; Mobile</a></li>
+            <li><a href="technology.html">Backend &amp; Cloud</a></li>
+            <li><a href="technology.html">Applied AI</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Opentechiz. All rights reserved.</p>
+        <p class="footer-copy">Europe &nbsp;|&nbsp; Australia &nbsp;|&nbsp; US &nbsp;&nbsp;<a href="mailto:hoanv@opentechiz.com" class="footer-accent-link">hoanv@opentechiz.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
