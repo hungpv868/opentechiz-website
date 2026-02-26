@@ -9,9 +9,9 @@
   --bg-secondary: #0d1526;
   --bg-card: #111827;
   --bg-card-hover: #162035;
-  --accent: #2ecc71;
-  --accent-dark: #27ae60;
-  --accent-glow: rgba(46, 204, 113, 0.15);
+  --accent: #96c73c;
+  --accent-dark: #7aad2a;
+  --accent-glow: rgba(150, 199, 60, 0.15);
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
@@ -95,8 +95,8 @@ img {
 
 .navbar.scrolled {
   background: rgba(8, 13, 26, 0.96);
-  border-color: rgba(46, 204, 113, 0.12);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(46, 204, 113, 0.06);
+  border-color: rgba(150, 199, 60, 0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(150, 199, 60, 0.06);
 }
 
 .nav-inner {
@@ -207,7 +207,7 @@ img {
 .btn-primary:hover {
   background: var(--accent-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(46, 204, 113, 0.3);
+  box-shadow: 0 8px 24px rgba(150, 199, 60, 0.3);
 }
 
 .btn-outline {
@@ -328,7 +328,7 @@ img {
   overflow: hidden;
   /* Subtle dot grid pattern */
   background-image:
-    radial-gradient(rgba(46, 204, 113, 0.12) 1px, transparent 1px);
+    radial-gradient(rgba(150, 199, 60, 0.12) 1px, transparent 1px);
   background-size: 36px 36px;
   background-position: 0 0;
 }
@@ -342,8 +342,8 @@ img {
   width: 700px;
   height: 700px;
   background: radial-gradient(circle at center,
-    rgba(46, 204, 113, 0.12) 0%,
-    rgba(46, 204, 113, 0.05) 40%,
+    rgba(150, 199, 60, 0.12) 0%,
+    rgba(150, 199, 60, 0.05) 40%,
     transparent 70%);
   pointer-events: none;
   animation: heroGlow 8s ease-in-out infinite alternate;
@@ -358,7 +358,7 @@ img {
   width: 560px;
   height: 560px;
   background: radial-gradient(circle at center,
-    rgba(46, 204, 113, 0.07) 0%,
+    rgba(150, 199, 60, 0.07) 0%,
     transparent 65%);
   pointer-events: none;
   animation: heroGlow 10s ease-in-out infinite alternate-reverse;
@@ -422,7 +422,7 @@ img {
 .hero-stat-card:hover {
   transform: translateX(6px);
   border-color: var(--accent);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4), -4px 0 20px rgba(46, 204, 113, 0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), -4px 0 20px rgba(150, 199, 60, 0.15);
 }
 
 .hero-stat-card:nth-child(2) {
@@ -435,7 +435,7 @@ img {
 .hero-stat-icon {
   width: 48px;
   height: 48px;
-  background: rgba(46, 204, 113, 0.1);
+  background: rgba(150, 199, 60, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -468,7 +468,7 @@ img {
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(46, 204, 113, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(150, 199, 60, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
@@ -478,14 +478,14 @@ img {
   align-items: center;
   gap: 8px;
   padding: 7px 16px;
-  background: rgba(46, 204, 113, 0.1);
-  border: 1px solid rgba(46, 204, 113, 0.35);
+  background: rgba(150, 199, 60, 0.1);
+  border: 1px solid rgba(150, 199, 60, 0.35);
   border-radius: 100px;
   font-size: 0.8rem;
   color: var(--accent);
   font-weight: 600;
   margin-bottom: 28px;
-  box-shadow: 0 0 20px rgba(46, 204, 113, 0.1);
+  box-shadow: 0 0 20px rgba(150, 199, 60, 0.1);
   letter-spacing: 0.02em;
 }
 
@@ -513,7 +513,7 @@ img {
 
 .hero-title .highlight {
   color: var(--accent);
-  text-shadow: 0 0 40px rgba(46, 204, 113, 0.35);
+  text-shadow: 0 0 40px rgba(150, 199, 60, 0.35);
 }
 
 .hero-desc {
@@ -688,7 +688,7 @@ img {
 .tech-tag:hover {
   background: var(--accent-glow);
   color: var(--accent);
-  border-color: rgba(46, 204, 113, 0.3);
+  border-color: rgba(150, 199, 60, 0.3);
 }
 
 /* --- Client/Project Cards --- */
@@ -752,7 +752,7 @@ img {
 
 /* --- CTA Section --- */
 .cta-section {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(46, 204, 113, 0.05) 100%);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(150, 199, 60, 0.05) 100%);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   text-align: center;
@@ -784,7 +784,7 @@ img {
   overflow: hidden;
   /* Dot grid pattern */
   background-image:
-    radial-gradient(rgba(46, 204, 113, 0.09) 1px, transparent 1px);
+    radial-gradient(rgba(150, 199, 60, 0.09) 1px, transparent 1px);
   background-size: 32px 32px;
   background-color: var(--bg-secondary);
 }
@@ -810,7 +810,7 @@ img {
   width: 500px;
   height: 500px;
   background: radial-gradient(circle,
-    rgba(46, 204, 113, 0.09) 0%,
+    rgba(150, 199, 60, 0.09) 0%,
     transparent 65%);
   pointer-events: none;
   z-index: 0;
@@ -1230,7 +1230,7 @@ img {
   display: none;
   padding: 20px;
   background: var(--accent-glow);
-  border: 1px solid rgba(46, 204, 113, 0.3);
+  border: 1px solid rgba(150, 199, 60, 0.3);
   border-radius: var(--radius);
   text-align: center;
   color: var(--accent);
