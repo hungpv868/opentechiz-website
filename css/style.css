@@ -68,7 +68,7 @@ img {
 /* --- Navbar --- */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 16px;
   left: 0;
   right: 0;
   height: var(--nav-height);
@@ -76,11 +76,12 @@ img {
   background: transparent;
   border: none;
   box-shadow: none;
-  transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
+  transition: top 0.3s ease, background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
 }
 
 .navbar.scrolled {
-  background: rgba(8, 13, 26, 0.92);
+  top: 0;
+  background: rgba(8, 13, 26, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(255,255,255,0.05), 0 8px 32px rgba(0, 0, 0, 0.5);
@@ -310,7 +311,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 16px);
   position: relative;
   overflow: hidden;
   /* Subtle dot grid pattern */
@@ -388,9 +389,9 @@ img {
 .hero-visual {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .hero-stat-card {
@@ -398,7 +399,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-left: 3px solid var(--accent);
   border-radius: 14px;
-  padding: 20px 24px;
+  padding: 18px 24px;
   backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
@@ -410,13 +411,6 @@ img {
   transform: translateX(6px);
   border-color: var(--accent);
   box-shadow: 0 8px 32px rgba(0,0,0,0.4), -4px 0 20px rgba(150, 199, 60, 0.15);
-}
-
-.hero-stat-card:nth-child(2) {
-  margin-left: 24px;
-}
-.hero-stat-card:nth-child(3) {
-  margin-left: 12px;
 }
 
 .hero-stat-icon {
