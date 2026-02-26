@@ -76,10 +76,14 @@ img {
   background: transparent;
   border: none;
   box-shadow: none;
-  transition: background var(--transition), backdrop-filter var(--transition);
+  transition: top 0.3s ease, height 0.3s ease, padding-top 0.3s ease,
+              background var(--transition), backdrop-filter var(--transition);
 }
 
 .navbar.scrolled {
+  top: 0;
+  height: calc(var(--nav-height) + 14px);
+  padding-top: 14px;
   background: rgba(8, 13, 26, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
