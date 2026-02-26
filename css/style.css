@@ -24,6 +24,20 @@
   --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
 }
 
+/* --- Light Mode Variables --- */
+html.light {
+  --bg-primary: #f4f7fb;
+  --bg-secondary: #eaeff6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border: #d8e0ed;
+  --border-light: #c3cfdf;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -1279,4 +1293,114 @@ img {
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .stat-number { font-size: 2rem; }
+}
+
+/* =============================================
+   THEME TOGGLE BUTTON
+   ============================================= */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.theme-toggle svg {
+  width: 17px;
+  height: 17px;
+  pointer-events: none;
+}
+
+/* Dark mode (default): show sun icon → click to go light */
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun  { display: block; }
+
+/* Light mode: show moon icon → click to go dark */
+html.light .theme-toggle .icon-moon { display: block; }
+html.light .theme-toggle .icon-sun  { display: none; }
+
+/* =============================================
+   LIGHT MODE OVERRIDES
+   ============================================= */
+
+/* Navbar frosted glass */
+html.light .navbar.scrolled {
+  background: rgba(244, 247, 251, 0.95);
+}
+
+/* Nav link hover */
+html.light .nav-link:hover,
+html.light .nav-link.active {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Hero stat cards */
+html.light .hero-stat-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: var(--border);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+html.light .hero-stat-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12), -4px 0 20px rgba(150, 199, 60, 0.12);
+}
+
+/* Tech tags */
+html.light .tech-tag {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Subtle list dividers that use hardcoded rgba white */
+html.light .service-list li,
+html.light .project-features li,
+html.light .approach-list li {
+  border-bottom-color: var(--border);
+}
+
+/* Traditional approach check icon */
+html.light .approach-card.traditional .check-icon {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* Page hero overlay for inner pages */
+html.light .page-hero::before {
+  background:
+    linear-gradient(180deg, rgba(234,239,246,0.7) 0%, transparent 40%, rgba(234,239,246,0.9) 100%),
+    linear-gradient(90deg, rgba(234,239,246,0.6) 0%, transparent 50%);
+}
+
+/* Service card hover shadow */
+html.light .service-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Project card hover shadow */
+html.light .project-card:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.14);
+}
+
+/* Mobile nav menu background (overrides var which auto-adapts) */
+@media (max-width: 768px) {
+  html.light .nav-menu {
+    background: var(--bg-primary);
+    border-top-color: var(--border);
+  }
+  html.light .theme-toggle {
+    margin-right: 0;
+  }
 }

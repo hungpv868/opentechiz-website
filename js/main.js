@@ -2,7 +2,23 @@
    OPENTECHIZ - Main JavaScript
    ============================================= */
 
+/* --- Theme: prevent flash of wrong theme (runs immediately) --- */
+(function () {
+  if (localStorage.getItem('theme') === 'light') {
+    document.documentElement.classList.add('light');
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* --- Theme toggle --- */
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+  }
 
   /* --- Navbar scroll effect --- */
   const navbar = document.querySelector('.navbar');
