@@ -120,13 +120,9 @@ img {
 }
 
 .nav-logo .logo-img {
-  height: 38px;
+  height: 48px;
   width: auto;
   display: block;
-}
-
-:root:not(.light) .nav-logo .logo-img {
-  filter: brightness(0) invert(1);
 }
 
 .nav-menu {
