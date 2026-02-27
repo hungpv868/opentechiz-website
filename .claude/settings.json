@@ -1,0 +1,9 @@
+{
+  "skills": [
+    {
+      "name": "seo-audit",
+      "description": "Comprehensive SEO audit: technical SEO, on-page, schema, content quality, and performance signals. Saves report to SEO_AUDIT.md.",
+      "path": ".claude/skills/seo-audit/SKILL.md"
+    }
+  ]
+}

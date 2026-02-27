@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow1" cx="25%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#96c73c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#080d1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="45%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#080d1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080d1a"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Logo icon -->
+  <circle cx="90" cy="90" r="42" stroke="#96c73c" stroke-width="4" fill="none"/>
+  <circle cx="90" cy="90" r="20" fill="#96c73c" fill-opacity="0.15"/>
+  <circle cx="90" cy="90" r="10" fill="#96c73c"/>
+  <circle cx="90" cy="53" r="6" fill="#96c73c" fill-opacity="0.7"/>
+
+  <!-- Logo text -->
+  <text x="148" y="82" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="32" fill="#ffffff" letter-spacing="3">OPEN</text>
+  <text x="148" y="116" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="32" fill="#96c73c">techiz</text>
+
+  <!-- Divider -->
+  <rect x="90" y="165" width="80" height="3" fill="#96c73c" rx="2"/>
+
+  <!-- Main headline -->
+  <text x="90" y="260" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="72" fill="#ffffff">Engineering Growth</text>
+  <text x="90" y="350" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="72" fill="#ffffff">Through <tspan fill="#96c73c">Scalable Systems</tspan></text>
+
+  <!-- Subtext -->
+  <text x="90" y="430" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="32" fill="#94a3b8">70+ Engineers · Ecommerce · AI · Cloud-Native</text>
+
+  <!-- Tags -->
+  <rect x="90" y="488" width="160" height="44" rx="22" fill="#96c73c" fill-opacity="0.15" stroke="#96c73c" stroke-width="1.5"/>
+  <text x="170" y="515" font-family="Inter, Arial, sans-serif" font-size="22" fill="#96c73c" text-anchor="middle">Ecommerce</text>
+
+  <rect x="268" y="488" width="180" height="44" rx="22" fill="#96c73c" fill-opacity="0.15" stroke="#96c73c" stroke-width="1.5"/>
+  <text x="358" y="515" font-family="Inter, Arial, sans-serif" font-size="22" fill="#96c73c" text-anchor="middle">Applied AI</text>
+
+  <rect x="466" y="488" width="230" height="44" rx="22" fill="#96c73c" fill-opacity="0.15" stroke="#96c73c" stroke-width="1.5"/>
+  <text x="581" y="515" font-family="Inter, Arial, sans-serif" font-size="22" fill="#96c73c" text-anchor="middle">Cloud-Native</text>
+
+  <!-- URL -->
+  <text x="90" y="592" font-family="Inter, Arial, sans-serif" font-size="24" fill="#475569">opentechiz.com</text>
+</svg>

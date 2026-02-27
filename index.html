@@ -2,34 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1a">
+  <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>Opentechiz | Scalable Platform &amp; AI Engineering Partner</title>
-  <meta name="description" content="Opentechiz is a 70-engineer product engineering company delivering scalable digital platforms, ecommerce solutions, and AI-driven systems for growing SMEs and global brands.">
-  <meta name="keywords" content="scalable platform, AI engineering, ecommerce development, Magento, Shopify, cloud-native, Kubernetes, AI agents, Vietnam software company">
+  <meta name="description" content="70-engineer product engineering company. We build scalable ecommerce platforms, AI-driven systems, and cloud-native infrastructure for global brands.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://opentechiz.com/">
-
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/favicon.svg">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://opentechiz.com/">
   <meta property="og:title" content="Opentechiz | Scalable Platform &amp; AI Engineering Partner">
   <meta property="og:description" content="Engineering Growth Through Scalable Systems. Ecommerce, Social Platforms, High-Concurrency Infrastructure, and Applied AI solutions.">
-  <meta property="og:image" content="https://opentechiz.com/images/og-image.jpg">
-
+  <meta property="og:image" content="https://opentechiz.com/images/og-image.svg">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Opentechiz | Scalable Platform &amp; AI Engineering Partner">
   <meta name="twitter:description" content="Engineering Growth Through Scalable Systems. 70+ engineers, global clients, cloud-native architecture.">
-
+  <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
@@ -37,13 +35,17 @@
     "@type": "Organization",
     "name": "Opentechiz",
     "url": "https://opentechiz.com",
-    "logo": "https://opentechiz.com/images/logo.png",
+    "logo": "https://opentechiz.com/images/logo.svg",
     "description": "Scalable Platform & AI Engineering Partner delivering digital platforms for SMEs and global brands.",
     "email": "hoanv@opentechiz.com",
+    "address": {"@type": "PostalAddress", "addressCountry": "VN"},
     "areaServed": ["Europe", "Australia", "United States"],
     "numberOfEmployees": {"@type": "QuantitativeValue", "value": 70},
     "knowsAbout": ["Ecommerce Development", "AI Engineering", "Cloud-Native Architecture", "Microservices", "Scalable Platforms"],
-    "sameAs": ["https://opentechiz.com"]
+    "sameAs": [
+      "https://www.linkedin.com/company/opentechiz",
+      "https://github.com/opentechiz"
+    ]
   }
   </script>
 </head>
@@ -83,6 +85,7 @@
     </div>
   </nav>
 
+  <main role="main">
   <!-- ========== HERO ========== -->
   <section class="hero">
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -115,7 +118,7 @@
         </div>
 
         <!-- RIGHT: Visual stat cards -->
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
           <div class="hero-stat-card">
             <div class="hero-stat-icon">👥</div>
             <div class="hero-stat-info">
@@ -371,6 +374,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
@@ -398,9 +403,9 @@
         <div>
           <p class="footer-col-title">Services</p>
           <ul class="footer-links">
-            <li><a href="services.html">Ecommerce Platforms</a></li>
-            <li><a href="services.html">Product Engineering</a></li>
-            <li><a href="services.html">AI-Driven Solutions</a></li>
+            <li><a href="services.html#ecommerce">Ecommerce Platforms</a></li>
+            <li><a href="services.html#product-engineering">Product Engineering</a></li>
+            <li><a href="services.html#ai-driven">AI-Driven Solutions</a></li>
           </ul>
         </div>
         <div>
@@ -413,7 +418,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2025 Opentechiz. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Opentechiz. All rights reserved.</p>
         <p class="footer-copy">
           Europe &nbsp;|&nbsp; Australia &nbsp;|&nbsp; US &nbsp;&nbsp;
           <a href="mailto:hoanv@opentechiz.com" class="footer-accent-link">hoanv@opentechiz.com</a>
