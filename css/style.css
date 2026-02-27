@@ -119,13 +119,14 @@ img {
   letter-spacing: -0.02em;
 }
 
-.nav-logo .logo-icon {
-  width: 36px;
-  height: 36px;
+.nav-logo .logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
-.logo-text span {
-  color: var(--accent);
+:root:not(.light) .nav-logo .logo-img {
+  filter: brightness(0) invert(1);
 }
 
 .nav-menu {
