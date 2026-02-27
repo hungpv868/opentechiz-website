@@ -117,46 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
-  /* --- Contact form handler --- */
-  const contactForm = document.querySelector('#contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const btn = contactForm.querySelector('button[type="submit"]');
-      const success = document.querySelector('.form-success');
-      const data = new FormData(contactForm);
-
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-
-      try {
-        const response = await fetch(contactForm.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          btn.textContent = 'Message Sent';
-          if (success) success.style.display = 'block';
-          contactForm.reset();
-          setTimeout(() => {
-            btn.textContent = 'Send Message';
-            btn.disabled = false;
-            if (success) success.style.display = 'none';
-          }, 4000);
-        } else {
-          throw new Error('Server error');
-        }
-      } catch {
-        btn.textContent = 'Send Message';
-        btn.disabled = false;
-        alert('Sorry, there was an error. Please email us directly at hoanv@opentechiz.com');
-      }
-    });
-  }
-
   /* --- Smooth scroll for anchor links --- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

@@ -93,141 +93,68 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
+  <!-- CONTACT INFO -->
   <section class="section">
     <div class="container">
-      <div class="contact-grid">
+      <div style="max-width: 720px; margin: 0 auto;">
 
-        <!-- FORM -->
-        <div>
-          <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">Send Us a Message</h2>
-          <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 0.9rem;">
-            We typically respond within 1 business day.
-          </p>
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">Contact Information</h3>
 
-          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-            <div class="grid-2" style="gap: 16px;">
-              <div class="form-group">
-                <label class="form-label" for="firstName">First Name *</label>
-                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="John" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="lastName">Last Name *</label>
-                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required>
-              </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉</div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">
+                <a href="mailto:hoanv@opentechiz.com">hoanv@opentechiz.com</a>
+              </p>
             </div>
+          </div>
 
-            <div class="form-group">
-              <label class="form-label" for="email">Work Email *</label>
-              <input class="form-input" type="email" id="email" name="email" placeholder="john@company.com" required>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🌐</div>
+            <div>
+              <p class="contact-info-label">Website</p>
+              <p class="contact-info-value">
+                <a href="https://opentechiz.com" target="_blank" rel="noopener">opentechiz.com</a>
+              </p>
             </div>
+          </div>
 
-            <div class="form-group">
-              <label class="form-label" for="company">Company</label>
-              <input class="form-input" type="text" id="company" name="company" placeholder="Your Company Name">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <p class="contact-info-label">Markets Served</p>
+              <p class="contact-info-value">Europe · Australia · United States</p>
             </div>
+          </div>
 
-            <div class="form-group">
-              <label class="form-label" for="service">Service Interest</label>
-              <select class="form-input form-select" id="service" name="service">
-                <option value="" disabled selected>Select a service...</option>
-                <option value="ecommerce">Ecommerce Platform (Magento / Shopify / Drupal)</option>
-                <option value="product-engineering">Scalable Product Engineering</option>
-                <option value="ai-driven">AI-Driven Enhancements</option>
-                <option value="dedicated-team">Dedicated Engineering Team</option>
-                <option value="consulting">Technical Architecture Consulting</option>
-                <option value="other">Other / Not Sure Yet</option>
-              </select>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">⏱</div>
+            <div>
+              <p class="contact-info-label">Response Time</p>
+              <p class="contact-info-value">Within 1 business day</p>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="message">Tell Us About Your Project *</label>
-              <textarea class="form-textarea" id="message" name="message" placeholder="Describe your project, current challenges, and what you'd like to achieve..." required></textarea>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="budget">Estimated Budget Range</label>
-              <select class="form-input form-select" id="budget" name="budget">
-                <option value="" disabled selected>Select a range...</option>
-                <option value="under-20k">Under $20,000</option>
-                <option value="20k-50k">$20,000 – $50,000</option>
-                <option value="50k-100k">$50,000 – $100,000</option>
-                <option value="100k-250k">$100,000 – $250,000</option>
-                <option value="250k+">$250,000+</option>
-                <option value="ongoing">Ongoing (dedicated team)</option>
-              </select>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 16px;">
-              Send Message
-            </button>
-
-            <p class="form-success" id="formSuccess">
-              ✓ Thank you! We'll be in touch within 1 business day.
-            </p>
-          </form>
+          </div>
         </div>
 
-        <!-- INFO SIDEBAR -->
-        <div>
-          <div class="contact-info-card">
-            <h3 class="contact-info-title">Contact Information</h3>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon">✉</div>
-              <div>
-                <p class="contact-info-label">Email</p>
-                <p class="contact-info-value">
-                  <a href="mailto:hoanv@opentechiz.com">hoanv@opentechiz.com</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon">🌐</div>
-              <div>
-                <p class="contact-info-label">Website</p>
-                <p class="contact-info-value">
-                  <a href="https://opentechiz.com" target="_blank" rel="noopener">opentechiz.com</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon">📍</div>
-              <div>
-                <p class="contact-info-label">Markets Served</p>
-                <p class="contact-info-value">Europe · Australia · United States</p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon">⏱</div>
-              <div>
-                <p class="contact-info-label">Response Time</p>
-                <p class="contact-info-value">Within 1 business day</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- WHAT TO EXPECT -->
-          <div class="card" style="margin-top: 20px; border-top: 3px solid var(--accent);">
-            <h3 class="card-title" style="margin-bottom: 16px;">What happens next?</h3>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
-              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">1</span>
-                <span>We review your message and assign the right engineering expert for your domain.</span>
-              </li>
-              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">2</span>
-                <span>We schedule a 30-minute discovery call to understand your requirements.</span>
-              </li>
-              <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-                <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">3</span>
-                <span>We prepare a tailored technical proposal and engagement recommendation.</span>
-              </li>
-            </ul>
-          </div>
+        <!-- WHAT TO EXPECT -->
+        <div class="card" style="margin-top: 20px; border-top: 3px solid var(--accent);">
+          <h3 class="card-title" style="margin-bottom: 16px;">What happens next?</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">1</span>
+              <span>We review your message and assign the right engineering expert for your domain.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">2</span>
+              <span>We schedule a 30-minute discovery call to understand your requirements.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
+              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">3</span>
+              <span>We prepare a tailored technical proposal and engagement recommendation.</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
