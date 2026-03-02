@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1a">
+  <meta name="theme-color" content="#06091a">
   <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>Ecommerce, AI &amp; Product Engineering Services | Open Techiz</title>
   <meta name="description" content="Ecommerce platforms (Magento, Shopify, Drupal), scalable product engineering, and AI-driven enhancements — built by 70+ engineers for global brands.">
@@ -22,42 +22,14 @@
   <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <script type="application/ld+json">
   [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://opentechiz.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://opentechiz.com/services.html"}
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Ecommerce Platform Development",
-      "description": "High-traffic ecommerce platforms built on Magento, Shopify, and Drupal Commerce for global brands.",
-      "provider": {"@type": "Organization", "name": "Open Techiz", "url": "https://opentechiz.com"},
-      "url": "https://opentechiz.com/services.html#ecommerce"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Scalable Product Engineering",
-      "description": "Custom web and mobile platforms with cloud-native architecture built for growth from day one.",
-      "provider": {"@type": "Organization", "name": "Open Techiz", "url": "https://opentechiz.com"},
-      "url": "https://opentechiz.com/services.html#product-engineering"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "AI-Driven Enhancements",
-      "description": "LLM, RAG, AI agents, and recommendation systems integrated into real products.",
-      "provider": {"@type": "Organization", "name": "Open Techiz", "url": "https://opentechiz.com"},
-      "url": "https://opentechiz.com/services.html#ai-driven"
-    }
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://opentechiz.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://opentechiz.com/services.html"}]},
+    {"@context":"https://schema.org","@type":"Service","name":"Ecommerce Platform Development","description":"High-traffic ecommerce platforms built on Magento, Shopify, and Drupal Commerce for global brands.","provider":{"@type":"Organization","name":"Open Techiz","url":"https://opentechiz.com"},"url":"https://opentechiz.com/services.html#ecommerce"},
+    {"@context":"https://schema.org","@type":"Service","name":"Scalable Product Engineering","description":"Custom web and mobile platforms with cloud-native architecture built for growth from day one.","provider":{"@type":"Organization","name":"Open Techiz","url":"https://opentechiz.com"},"url":"https://opentechiz.com/services.html#product-engineering"},
+    {"@context":"https://schema.org","@type":"Service","name":"AI-Driven Enhancements","description":"LLM, RAG, AI agents, and recommendation systems integrated into real products.","provider":{"@type":"Organization","name":"Open Techiz","url":"https://opentechiz.com"},"url":"https://opentechiz.com/services.html#ai-driven"}
   ]
   </script>
 </head>
@@ -89,103 +61,142 @@
   </nav>
 
   <main role="main">
+
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <section class="page-hero page-hero-services">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a><span>›</span><span>Services</span>
       </nav>
-      <span class="section-label">What We Build</span>
       <h1 class="page-hero-title">Engineering built for<br>the real world</h1>
       <p class="page-hero-desc">
         Three core service pillars — Ecommerce Platforms, Scalable Product Engineering, and AI-Driven Enhancements —
         designed to take your digital product from concept to production at scale.
       </p>
+      <div style="display:flex; gap:24px; margin-top:32px; flex-wrap:wrap;">
+        <a href="#ecommerce" class="breadcrumb" style="margin-bottom:0; color:var(--accent); gap:6px;">
+          <span style="color:var(--text-muted);">01</span> Ecommerce
+        </a>
+        <a href="#product-engineering" class="breadcrumb" style="margin-bottom:0; color:var(--accent); gap:6px;">
+          <span style="color:var(--text-muted);">02</span> Product Engineering
+        </a>
+        <a href="#ai-driven" class="breadcrumb" style="margin-bottom:0; color:var(--accent); gap:6px;">
+          <span style="color:var(--text-muted);">03</span> AI-Driven
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- SERVICE 1: ECOMMERCE -->
-  <section class="section" id="ecommerce">
+  <section class="service-section" id="ecommerce">
     <div class="container">
-      <div class="grid-2" style="gap: 64px; align-items: start;">
+      <div class="grid-2" style="gap: 72px; align-items: start;">
         <div>
-          <span class="section-label">Service 01</span>
-          <h2 class="section-title">Ecommerce Platforms</h2>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 28px;">
+          <span class="service-number">01</span>
+          <span class="section-label">Ecommerce Platforms</span>
+          <h2 class="section-title">Commerce at global scale</h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1rem;">
             We design, build, and maintain high-traffic ecommerce platforms for brands that sell globally.
             Whether you're launching from scratch, migrating from one platform to another, or scaling an
             existing store to handle millions of concurrent users — we've done it.
           </p>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px; font-size: 1rem;">
             Our ecommerce engineers are specialists in Magento, Shopify, and Drupal Commerce, with deep
             experience in multi-country, multi-currency, and multi-language storefronts.
           </p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <span class="tech-tag" style="font-size: 0.875rem; padding: 7px 16px;">Magento</span>
-            <span class="tech-tag" style="font-size: 0.875rem; padding: 7px 16px;">Shopify</span>
-            <span class="tech-tag" style="font-size: 0.875rem; padding: 7px 16px;">Drupal Commerce</span>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px;">
+            <span class="tech-tag" style="font-size: 0.8rem; padding: 6px 14px;">Magento</span>
+            <span class="tech-tag" style="font-size: 0.8rem; padding: 6px 14px;">Shopify</span>
+            <span class="tech-tag" style="font-size: 0.8rem; padding: 6px 14px;">Drupal Commerce</span>
           </div>
+          <a href="contact.html" class="btn btn-primary">Start a Project</a>
         </div>
 
-        <div>
-          <div class="card card-accent" style="margin-bottom: 16px;">
-            <h3 class="card-title">🌍 Multi-Country Stores</h3>
-            <p class="card-text">
-              Build and manage ecommerce storefronts across multiple countries and languages from a single
-              platform. Multi-currency, localized checkout, and regional tax compliance built-in.
-            </p>
+        <div class="service-feature-grid">
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+              </div>
+              Multi-Country Stores
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Multi-currency, localized checkout, and regional tax compliance built in across multiple countries.</p>
           </div>
-          <div class="card card-accent" style="margin-bottom: 16px;">
-            <h3 class="card-title">🚀 High-Traffic Infrastructure</h3>
-            <p class="card-text">
-              Architecture designed to handle traffic spikes, flash sales, and sustained high-concurrency
-              without downtime. Redis caching, CDN integration, and auto-scaling out of the box.
-            </p>
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg>
+              </div>
+              High-Traffic Infrastructure
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Redis caching, CDN integration, and auto-scaling for flash sales and sustained high-concurrency.</p>
           </div>
-          <div class="card card-accent">
-            <h3 class="card-title">🔄 Platform Migration &amp; Integration</h3>
-            <p class="card-text">
-              Migrate from legacy systems or between platforms with zero data loss. Integrate with ERP,
-              SAP, CRM, payment gateways, and logistics providers seamlessly.
-            </p>
+          <div class="service-feature-item" style="grid-column: 1 / -1;">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
+              </div>
+              Platform Migration &amp; Integration
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Migrate from legacy systems with zero data loss. Integrate ERP, SAP, CRM, payment gateways, and logistics providers seamlessly.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
   <!-- SERVICE 2: PRODUCT ENGINEERING -->
-  <section class="section" id="product-engineering">
+  <section class="service-section section-dark" id="product-engineering">
     <div class="container">
-      <div class="grid-2" style="gap: 64px; align-items: start;">
-        <div class="grid-2" style="gap: 16px; order: -1;">
-          <div class="card card-accent">
-            <h3 class="card-title">📱 Web &amp; Mobile Platforms</h3>
-            <p class="card-text">Full-stack development for web and mobile applications built with React, React Native, and modern JavaScript frameworks.</p>
+      <div class="grid-2" style="gap: 72px; align-items: start;">
+        <div class="service-feature-grid" style="order: -1;">
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+              </div>
+              Web &amp; Mobile Platforms
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Full-stack development for web and mobile built with React, React Native, and modern JavaScript frameworks.</p>
           </div>
-          <div class="card card-accent">
-            <h3 class="card-title">⚡ High-Performance Backends</h3>
-            <p class="card-text">NestJS, Golang, and PHP backends optimized for throughput, with Kafka for event streaming and RabbitMQ for messaging queues.</p>
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg>
+              </div>
+              High-Performance Backends
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">NestJS, Golang, and PHP backends optimized for throughput, with Kafka and RabbitMQ for messaging.</p>
           </div>
-          <div class="card card-accent">
-            <h3 class="card-title">🏗️ Cloud-Native Architecture</h3>
-            <p class="card-text">Microservices deployed on Kubernetes, with full CI/CD pipelines, infrastructure as code, and auto-scaling configuration.</p>
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" /></svg>
+              </div>
+              Cloud-Native Architecture
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Microservices on Kubernetes, full CI/CD pipelines, infrastructure as code, and auto-scaling configuration.</p>
           </div>
-          <div class="card card-accent">
-            <h3 class="card-title">📈 Built for Growth</h3>
-            <p class="card-text">Architecture decisions made with scale in mind from day one. We prevent technical debt from blocking your next stage of growth.</p>
+          <div class="service-feature-item">
+            <div class="service-feature-title">
+              <div class="sficon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
+              </div>
+              Built for Growth
+            </div>
+            <p class="card-text" style="font-size:0.82rem;">Architecture decisions made with scale in mind from day one. We prevent technical debt from blocking your growth.</p>
           </div>
         </div>
+
         <div>
-          <span class="section-label">Service 02</span>
-          <h2 class="section-title">Scalable Product Engineering</h2>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 28px;">
+          <span class="service-number">02</span>
+          <span class="section-label">Scalable Product Engineering</span>
+          <h2 class="section-title">The technical backbone of your product</h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1rem;">
             We build the technical backbone of your digital product — from custom web applications and mobile
             platforms to high-concurrency backend systems that power millions of users.
           </p>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 36px; font-size: 1rem;">
             Our engineers are experienced across the full stack, choosing the right technology for each
             layer of your system rather than forcing a one-size-fits-all approach.
           </p>
@@ -195,65 +206,73 @@
     </div>
   </section>
 
-  <div class="divider"></div>
-
   <!-- SERVICE 3: AI-DRIVEN -->
-  <section class="section" id="ai-driven">
+  <section class="service-section" id="ai-driven">
     <div class="container">
-      <div class="grid-2" style="gap: 64px; align-items: start;">
+      <span class="service-number">03</span>
+      <div class="ai-full-grid">
         <div>
-          <span class="section-label">Service 03</span>
-          <h2 class="section-title">AI-Driven Enhancements</h2>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 28px;">
+          <span class="section-label">AI-Driven Enhancements</span>
+          <h2 class="section-title">Applied AI in every product layer</h2>
+          <p style="color: var(--text-secondary); line-height: 1.82; margin-bottom: 24px; font-size: 1rem;">
             Applied AI is no longer a future investment — it's a competitive requirement. We integrate
             AI capabilities directly into your product: intelligent search, personalized recommendations,
             automated workflows, and conversational interfaces.
           </p>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+          <p style="color: var(--text-secondary); line-height: 1.82; margin-bottom: 36px; font-size: 1rem;">
             We work with both open-source and proprietary models, fine-tuning where necessary and building
             the retrieval infrastructure (RAG) that makes AI outputs reliable and relevant.
           </p>
           <a href="technology.html" class="btn btn-outline">See Our AI Tech Stack</a>
         </div>
-        <div>
-          <ul class="service-list" style="font-size: 1rem;">
-            <li style="padding: 14px 0; border-bottom: 1px solid var(--border);">
-              <span style="color: var(--accent); font-size: 1.3rem;">🤖</span>
-              <div>
-                <strong style="display: block; margin-bottom: 4px; color: var(--text-primary);">AI Agents &amp; Workflow Automation</strong>
-                <span style="font-size: 0.875rem;">Autonomous agents that handle complex multi-step processes, reducing manual work and operational costs.</span>
-              </div>
-            </li>
-            <li style="padding: 14px 0; border-bottom: 1px solid var(--border);">
-              <span style="color: var(--accent); font-size: 1.3rem;">🧠</span>
-              <div>
-                <strong style="display: block; margin-bottom: 4px; color: var(--text-primary);">LLM &amp; RAG Implementation</strong>
-                <span style="font-size: 0.875rem;">Large language model integration with retrieval-augmented generation for accurate, context-aware AI responses.</span>
-              </div>
-            </li>
-            <li style="padding: 14px 0; border-bottom: 1px solid var(--border);">
-              <span style="color: var(--accent); font-size: 1.3rem;">🔍</span>
-              <div>
-                <strong style="display: block; margin-bottom: 4px; color: var(--text-primary);">AI-Enhanced Search &amp; Personalization</strong>
-                <span style="font-size: 0.875rem;">Semantic search, visual search, and personalized content delivery powered by embedding models and Elasticsearch.</span>
-              </div>
-            </li>
-            <li style="padding: 14px 0; border-bottom: 1px solid var(--border);">
-              <span style="color: var(--accent); font-size: 1.3rem;">⚙️</span>
-              <div>
-                <strong style="display: block; margin-bottom: 4px; color: var(--text-primary);">Fine-tuned Open-Source Models</strong>
-                <span style="font-size: 0.875rem;">Domain-specific fine-tuning of open-source LLMs for specialized tasks without vendor lock-in.</span>
-              </div>
-            </li>
-            <li style="padding: 14px 0;">
-              <span style="color: var(--accent); font-size: 1.3rem;">🎯</span>
-              <div>
-                <strong style="display: block; margin-bottom: 4px; color: var(--text-primary);">Recommendation Systems</strong>
-                <span style="font-size: 0.875rem;">Collaborative filtering, content-based filtering, and hybrid recommendation engines for ecommerce and social platforms.</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+
+        <ul class="ai-feature-list">
+          <li>
+            <div class="ai-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg>
+            </div>
+            <div>
+              <strong style="display: block; margin-bottom: 4px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-display);">AI Agents &amp; Workflow Automation</strong>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">Autonomous agents that handle complex multi-step processes, reducing manual work and operational costs.</span>
+            </div>
+          </li>
+          <li>
+            <div class="ai-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+            </div>
+            <div>
+              <strong style="display: block; margin-bottom: 4px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-display);">LLM &amp; RAG Implementation</strong>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">Large language model integration with retrieval-augmented generation for accurate, context-aware AI responses.</span>
+            </div>
+          </li>
+          <li>
+            <div class="ai-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+            </div>
+            <div>
+              <strong style="display: block; margin-bottom: 4px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-display);">AI-Enhanced Search &amp; Personalization</strong>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">Semantic search, visual search, and personalized content delivery powered by embedding models and Elasticsearch.</span>
+            </div>
+          </li>
+          <li>
+            <div class="ai-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
+            </div>
+            <div>
+              <strong style="display: block; margin-bottom: 4px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-display);">Fine-tuned Open-Source Models</strong>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">Domain-specific fine-tuning of open-source LLMs for specialized tasks without vendor lock-in.</span>
+            </div>
+          </li>
+          <li>
+            <div class="ai-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div>
+              <strong style="display: block; margin-bottom: 4px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-display);">Recommendation Systems</strong>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">Collaborative filtering, content-based filtering, and hybrid recommendation engines for ecommerce and social.</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -266,7 +285,7 @@
       <p class="section-subtitle">Let's have a free 30-minute consultation to map out the right engineering approach for your product.</p>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-primary">Book a Free Consultation</a>
-        <a href="projects.html" class="btn btn-outline">View Case Studies</a>
+        <a href="about.html" class="btn btn-outline">Learn About Us</a>
       </div>
     </div>
   </section>

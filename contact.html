@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1a">
+  <meta name="theme-color" content="#06091a">
   <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>Contact Us | Open Techiz - Get a Free Engineering Consultation</title>
   <meta name="description" content="Contact Open Techiz for a free engineering consultation. We build ecommerce platforms, scalable products, and AI-driven solutions. Reply within 1 business day.">
@@ -22,25 +22,12 @@
   <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <script type="application/ld+json">
   [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://opentechiz.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://opentechiz.com/contact.html"}
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact Open Techiz",
-      "url": "https://opentechiz.com/contact.html",
-      "description": "Get a free engineering consultation for ecommerce platforms, scalable products, and AI-driven solutions."
-    }
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://opentechiz.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://opentechiz.com/contact.html"}]},
+    {"@context":"https://schema.org","@type":"ContactPage","name":"Contact Open Techiz","url":"https://opentechiz.com/contact.html","description":"Get a free engineering consultation for ecommerce platforms, scalable products, and AI-driven solutions."}
   ]
   </script>
 </head>
@@ -72,31 +59,45 @@
   </nav>
 
   <main role="main">
-  <!-- PAGE HERO -->
-  <section class="page-hero">
+
+  <!-- PAGE HERO — bold typographic contact -->
+  <section class="contact-hero-bold">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a><span>›</span><span>Contact</span>
       </nav>
-      <span class="section-label">Get in Touch</span>
-      <h1 class="page-hero-title">Let's Build Your Next<br>Scalable Digital Platform</h1>
-      <p class="page-hero-desc">
-        Tell us about your project and we'll schedule a free consultation to discuss the right
-        engineering approach for your needs. No obligations, no sales pitch — just honest technical advice.
-      </p>
+      <p class="contact-display-title">Let's build something<br>worth scaling.</p>
+      <a href="mailto:hoanv@opentechiz.com" class="contact-email-link">hoanv@opentechiz.com</a>
+      <div class="contact-hero-meta">
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+          Europe · Australia · United States
+        </span>
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+          Reply within 1 business day
+        </span>
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+          Free consultation, no obligations
+        </span>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT INFO -->
+  <!-- CONTACT CONTENT -->
   <section class="section">
     <div class="container">
-      <div style="max-width: 720px; margin: 0 auto;">
+      <div style="max-width: 760px; margin: 0 auto;">
 
+        <!-- Contact Info Card -->
         <div class="contact-info-card">
           <h3 class="contact-info-title">Contact Information</h3>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">✉</div>
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+            </div>
             <div>
               <p class="contact-info-label">Email</p>
               <p class="contact-info-value">
@@ -106,7 +107,9 @@
           </div>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">🌐</div>
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+            </div>
             <div>
               <p class="contact-info-label">Website</p>
               <p class="contact-info-value">
@@ -116,7 +119,9 @@
           </div>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+            </div>
             <div>
               <p class="contact-info-label">Markets Served</p>
               <p class="contact-info-value">Europe · Australia · United States</p>
@@ -124,7 +129,9 @@
           </div>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">⏱</div>
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
             <div>
               <p class="contact-info-label">Response Time</p>
               <p class="contact-info-value">Within 1 business day</p>
@@ -132,52 +139,23 @@
           </div>
         </div>
 
-        <!-- WHAT TO EXPECT -->
-        <div class="card" style="margin-top: 20px; border-top: 3px solid var(--accent);">
-          <h3 class="card-title" style="margin-bottom: 16px;">What happens next?</h3>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
-            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">1</span>
-              <span>We review your message and assign the right engineering expert for your domain.</span>
-            </li>
-            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">2</span>
-              <span>We schedule a 30-minute discovery call to understand your requirements.</span>
-            </li>
-            <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; color: var(--text-secondary);">
-              <span style="width: 22px; height: 22px; background: var(--accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;">3</span>
-              <span>We prepare a tailored technical proposal and engagement recommendation.</span>
-            </li>
-          </ul>
+        <!-- What happens next -->
+        <div class="card" style="margin-top: 20px; border-top: 2px solid var(--accent);">
+          <h3 class="card-title" style="margin-bottom: 20px;">What happens next?</h3>
+          <div class="process-step">
+            <div class="process-step-num">1</div>
+            <p class="process-step-text">We review your message and assign the right engineering expert for your domain.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">2</div>
+            <p class="process-step-text">We schedule a 30-minute discovery call to understand your requirements in depth.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">3</div>
+            <p class="process-step-text">We prepare a tailored technical proposal and engagement recommendation for your review.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- WHY OPENTECHIZ -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-label">Why Work With Us</span>
-        <h2 class="section-title">The Open Techiz difference</h2>
-        <span class="accent-line" style="display: block; margin: 20px auto 0;"></span>
-      </div>
-      <div class="grid-3">
-        <div class="card card-accent reveal">
-          <div class="capability-icon">🧠</div>
-          <h3 class="card-title">Deep Technical Expertise</h3>
-          <p class="card-text">70 engineers with specializations in ecommerce, real-time systems, cloud-native architecture, and applied AI — not generalists.</p>
-        </div>
-        <div class="card card-accent reveal reveal-delay-2">
-          <div class="capability-icon">🤝</div>
-          <h3 class="card-title">Partnership Model</h3>
-          <p class="card-text">We work as an extension of your team, not a remote vendor. Transparent communication, shared tools, and aligned incentives.</p>
-        </div>
-        <div class="card card-accent reveal reveal-delay-3">
-          <div class="capability-icon">📈</div>
-          <h3 class="card-title">Proven at Scale</h3>
-          <p class="card-text">Our work has powered global brands handling millions of users and transactions — we understand what it takes to perform at scale.</p>
-        </div>
       </div>
     </div>
   </section>

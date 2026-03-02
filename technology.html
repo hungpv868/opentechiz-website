@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1a">
+  <meta name="theme-color" content="#06091a">
   <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>Technology | Open Techiz - Full-Stack Engineering Capabilities</title>
   <meta name="description" content="Open Techiz's technology stack: React Native, NestJS, Golang, Magento, Shopify, AWS, GCP, Kubernetes, Kafka, LLM, RAG, AI Agents, and more.">
@@ -22,8 +22,8 @@
   <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,37 +63,47 @@
   </nav>
 
   <main role="main">
+
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <section class="page-hero page-hero-technology">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a><span>›</span><span>Technology</span>
       </nav>
-      <span class="section-label">Technology Capabilities</span>
       <h1 class="page-hero-title">The stack behind<br>every scalable product</h1>
       <p class="page-hero-desc">
         We choose technology based on what's right for your product — not what's trendy. Our engineers
         have production experience across the full stack: frontend, backend, cloud, data, and AI.
       </p>
+      <div style="display:flex; gap:32px; margin-top:28px; flex-wrap:wrap;">
+        <a href="#frontend" style="font-size:0.78rem; color:var(--text-secondary); text-decoration:none; letter-spacing:0.04em;"><span style="color:var(--text-muted); margin-right:6px;">01</span>Frontend &amp; Mobile</a>
+        <a href="#ecommerce-tech" style="font-size:0.78rem; color:var(--text-secondary); text-decoration:none; letter-spacing:0.04em;"><span style="color:var(--text-muted); margin-right:6px;">02</span>Ecommerce</a>
+        <a href="#backend" style="font-size:0.78rem; color:var(--text-secondary); text-decoration:none; letter-spacing:0.04em;"><span style="color:var(--text-muted); margin-right:6px;">03</span>Backend &amp; Cloud</a>
+        <a href="#applied-ai" style="font-size:0.78rem; color:var(--text-secondary); text-decoration:none; letter-spacing:0.04em;"><span style="color:var(--text-muted); margin-right:6px;">04</span>Applied AI</a>
+      </div>
     </div>
   </section>
 
-  <!-- TECH GRID -->
+  <!-- TECH MATRIX -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Full-Stack Coverage</span>
-        <h2 class="section-title">Six technology domains,<br>production-proven</h2>
-        <span class="accent-line"></span>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:48px; gap:32px; flex-wrap:wrap;">
+        <div>
+          <span class="eyebrow">Full-Stack Coverage</span>
+          <h2 class="section-title" style="margin-bottom:0;">Six domains,<br>production-proven</h2>
+        </div>
+        <p style="max-width:340px; color:var(--text-secondary); font-size:0.88rem; line-height:1.6; text-align:right;">Every tool chosen for production suitability, not hype. Real engineers, real project experience across each domain.</p>
       </div>
 
-      <div class="grid-3">
+      <div class="tech-matrix">
 
         <!-- Frontend & Mobile -->
-        <div class="tech-card reveal">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">📱</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Frontend &amp; Mobile</h3>
+        <div class="tech-matrix-row" id="frontend">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+            </div>
+            <span class="tech-matrix-name">Frontend &amp; Mobile</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">React</span>
@@ -108,10 +118,12 @@
         </div>
 
         <!-- Ecommerce Platforms -->
-        <div class="tech-card reveal reveal-delay-1">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">🛒</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Ecommerce Platforms</h3>
+        <div class="tech-matrix-row" id="ecommerce-tech">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" /></svg>
+            </div>
+            <span class="tech-matrix-name">Ecommerce Platforms</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">Magento 2</span>
@@ -124,10 +136,12 @@
         </div>
 
         <!-- Databases -->
-        <div class="tech-card reveal reveal-delay-2">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">🗄️</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Databases</h3>
+        <div class="tech-matrix-row">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" /></svg>
+            </div>
+            <span class="tech-matrix-name">Databases</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">PostgreSQL</span>
@@ -141,10 +155,12 @@
         </div>
 
         <!-- Backend Systems -->
-        <div class="tech-card reveal reveal-delay-3">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">⚙️</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Backend Systems</h3>
+        <div class="tech-matrix-row" id="backend">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
+            </div>
+            <span class="tech-matrix-name">Backend Systems</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">NestJS</span>
@@ -159,10 +175,12 @@
         </div>
 
         <!-- Cloud & DevOps -->
-        <div class="tech-card reveal reveal-delay-4">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">☁️</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Cloud &amp; DevOps</h3>
+        <div class="tech-matrix-row">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" /></svg>
+            </div>
+            <span class="tech-matrix-name">Cloud &amp; DevOps</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">AWS</span>
@@ -179,10 +197,12 @@
         </div>
 
         <!-- Applied AI -->
-        <div class="tech-card reveal reveal-delay-5">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <div class="capability-icon" style="margin-bottom: 0;">🤖</div>
-            <h3 class="tech-card-title" style="margin-bottom: 0;">Applied AI</h3>
+        <div class="tech-matrix-row" id="applied-ai">
+          <div class="tech-matrix-label">
+            <div class="tech-matrix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg>
+            </div>
+            <span class="tech-matrix-name">Applied AI</span>
           </div>
           <div class="tech-tags">
             <span class="tech-tag">LLM</span>
@@ -202,48 +222,59 @@
     </div>
   </section>
 
-  <!-- WHY OUR STACK -->
+  <!-- ENGINEERING PHILOSOPHY -->
   <section class="section section-dark">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Our Engineering Philosophy</span>
-        <h2 class="section-title">Right tool, right job</h2>
-        <p class="section-subtitle">
-          We don't lock you into a single framework or vendor. Every architectural decision is made to serve your product's specific needs for performance, cost, and long-term maintainability.
-        </p>
-        <span class="accent-line"></span>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:48px; gap:32px; flex-wrap:wrap;">
+        <div>
+          <span class="eyebrow">Engineering Philosophy</span>
+          <h2 class="section-title" style="margin-bottom:0;">Right tool,<br>right job</h2>
+        </div>
+        <p style="max-width:360px; color:var(--text-secondary); font-size:0.88rem; line-height:1.6; text-align:right;">We don't lock you into a single framework or vendor. Every decision serves your product's performance, cost, and long-term maintainability.</p>
       </div>
 
-      <div class="grid-3">
-        <div class="card reveal">
-          <div class="capability-icon">🎯</div>
-          <h3 class="card-title">Fit-for-Purpose</h3>
-          <p class="card-text">We evaluate technology choices against your specific use case, scale requirements, and team capabilities — not industry hype.</p>
+      <div class="num-list">
+        <div class="num-list-item">
+          <span class="num-list-num">01</span>
+          <div>
+            <h3 class="num-list-title">Fit-for-Purpose</h3>
+            <p class="num-list-desc">We evaluate technology choices against your specific use case, scale requirements, and team capabilities — not industry hype.</p>
+          </div>
         </div>
-        <div class="card reveal reveal-delay-2">
-          <div class="capability-icon">🔓</div>
-          <h3 class="card-title">No Vendor Lock-in</h3>
-          <p class="card-text">We favor open standards, open-source tools, and portable architectures so you're never trapped in a proprietary ecosystem.</p>
+        <div class="num-list-item">
+          <span class="num-list-num">02</span>
+          <div>
+            <h3 class="num-list-title">No Vendor Lock-in</h3>
+            <p class="num-list-desc">We favor open standards, open-source tools, and portable architectures so you're never trapped in a proprietary ecosystem.</p>
+          </div>
         </div>
-        <div class="card reveal reveal-delay-3">
-          <div class="capability-icon">📊</div>
-          <h3 class="card-title">Observable &amp; Maintainable</h3>
-          <p class="card-text">Production systems are instrumented with logging, metrics, and tracing from day one. No black boxes, no surprises at 3am.</p>
+        <div class="num-list-item">
+          <span class="num-list-num">03</span>
+          <div>
+            <h3 class="num-list-title">Observable &amp; Maintainable</h3>
+            <p class="num-list-desc">Production systems are instrumented with logging, metrics, and tracing from day one. No black boxes, no surprises.</p>
+          </div>
         </div>
-        <div class="card reveal reveal-delay-4">
-          <div class="capability-icon">🛡️</div>
-          <h3 class="card-title">Security First</h3>
-          <p class="card-text">Security is built in, not bolted on. OWASP-compliant code, dependency auditing, secret management, and vulnerability scanning in CI/CD.</p>
+        <div class="num-list-item">
+          <span class="num-list-num">04</span>
+          <div>
+            <h3 class="num-list-title">Security First</h3>
+            <p class="num-list-desc">OWASP-compliant code, dependency auditing, secret management, and vulnerability scanning in CI/CD. Security built in, not bolted on.</p>
+          </div>
         </div>
-        <div class="card reveal reveal-delay-5">
-          <div class="capability-icon">⚡</div>
-          <h3 class="card-title">Performance by Design</h3>
-          <p class="card-text">Database indexing, query optimization, caching strategy, and CDN configuration are core parts of our delivery, not afterthoughts.</p>
+        <div class="num-list-item">
+          <span class="num-list-num">05</span>
+          <div>
+            <h3 class="num-list-title">Performance by Design</h3>
+            <p class="num-list-desc">Database indexing, query optimization, caching strategy, and CDN configuration are core parts of our delivery — not afterthoughts.</p>
+          </div>
         </div>
-        <div class="card reveal reveal-delay-6">
-          <div class="capability-icon">🤖</div>
-          <h3 class="card-title">AI-Augmented Delivery</h3>
-          <p class="card-text">Our team uses AI-assisted coding, automated testing, and AI code review to deliver faster without sacrificing quality or security.</p>
+        <div class="num-list-item">
+          <span class="num-list-num">06</span>
+          <div>
+            <h3 class="num-list-title">AI-Augmented Delivery</h3>
+            <p class="num-list-desc">Our team uses AI-assisted coding, automated testing, and AI code review to deliver faster without sacrificing quality or security.</p>
+          </div>
         </div>
       </div>
     </div>

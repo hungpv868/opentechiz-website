@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1a">
+  <meta name="theme-color" content="#06091a">
   <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>Open Techiz | Scalable Platform &amp; AI Engineering Partner</title>
   <meta name="description" content="70-engineer product engineering company. We build scalable ecommerce platforms, AI-driven systems, and cloud-native infrastructure for global brands.">
@@ -11,24 +11,19 @@
   <link rel="canonical" href="https://opentechiz.com/">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="apple-touch-icon" href="images/favicon.svg">
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://opentechiz.com/">
   <meta property="og:title" content="Open Techiz | Scalable Platform &amp; AI Engineering Partner">
   <meta property="og:description" content="Engineering Growth Through Scalable Systems. Ecommerce, Social Platforms, High-Concurrency Infrastructure, and Applied AI solutions.">
   <meta property="og:image" content="https://opentechiz.com/images/og-image.svg">
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Techiz | Scalable Platform &amp; AI Engineering Partner">
   <meta name="twitter:description" content="Engineering Growth Through Scalable Systems. 70+ engineers, global clients, cloud-native architecture.">
   <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=3">
-  <!-- JSON-LD Structured Data -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,23 +37,19 @@
     "areaServed": ["Europe", "Australia", "United States"],
     "numberOfEmployees": {"@type": "QuantitativeValue", "value": 70},
     "knowsAbout": ["Ecommerce Development", "AI Engineering", "Cloud-Native Architecture", "Microservices", "Scalable Platforms"],
-    "sameAs": [
-      "https://www.linkedin.com/company/opentechiz",
-      "https://github.com/opentechiz"
-    ]
+    "sameAs": ["https://www.linkedin.com/company/opentechiz", "https://github.com/opentechiz"]
   }
   </script>
 </head>
 <body>
 
-  <!-- ========== NAVBAR ========== -->
+  <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <div class="nav-inner">
         <a href="index.html" class="nav-logo" aria-label="Open Techiz Home">
           <img src="images/logo.png" alt="Open Techiz" class="logo-img">
         </a>
-
         <ul class="nav-menu" role="list">
           <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
@@ -66,7 +57,6 @@
           <li><a href="technology.html" class="nav-link">Technology</a></li>
           <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
         </ul>
-
         <button class="theme-toggle" aria-label="Toggle light/dark mode">
           <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -79,16 +69,15 @@
   </nav>
 
   <main role="main">
-  <!-- ========== HERO ========== -->
+
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner">
 
-        <!-- LEFT: Text content -->
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="dot"></span>
+            <span class="dot" aria-hidden="true"></span>
             Scalable Platform &amp; AI Engineering Partner
           </div>
           <h1 class="hero-title">
@@ -100,7 +89,7 @@
           </p>
           <div class="hero-actions">
             <a href="contact.html" class="btn btn-primary">Start a Project</a>
-            <a href="projects.html" class="btn btn-outline">View Our Work</a>
+            <a href="services.html" class="btn btn-outline">Explore Services</a>
           </div>
           <div class="hero-tags">
             <span class="hero-tag">Ecommerce</span>
@@ -110,35 +99,35 @@
           </div>
         </div>
 
-        <!-- RIGHT: Visual stat cards -->
-        <div class="hero-visual">
+        <!-- Bento stat cards -->
+        <div class="hero-visual" aria-hidden="true">
           <div class="hero-stat-card">
-            <div class="hero-stat-icon">👥</div>
-            <div class="hero-stat-info">
-              <div class="stat-val">70+</div>
-              <div class="stat-desc">Product Engineers<br>across all domains</div>
+            <div class="hsc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>
             </div>
+            <div class="hsc-val">70<span style="font-size:1.2rem">+</span></div>
+            <div class="hsc-label">Product Engineers<br>across all domains</div>
           </div>
           <div class="hero-stat-card">
-            <div class="hero-stat-icon">🚀</div>
-            <div class="hero-stat-info">
-              <div class="stat-val">50+</div>
-              <div class="stat-desc">Scalable platforms<br>shipped to production</div>
+            <div class="hsc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg>
             </div>
+            <div class="hsc-val">50<span style="font-size:1.2rem">+</span></div>
+            <div class="hsc-label">Scalable platforms<br>shipped to production</div>
           </div>
           <div class="hero-stat-card">
-            <div class="hero-stat-icon">🤖</div>
-            <div class="hero-stat-info">
-              <div class="stat-val">AI-First</div>
-              <div class="stat-desc">LLM, RAG &amp; AI Agents<br>integrated into products</div>
+            <div class="hsc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg>
             </div>
+            <div class="hsc-val" style="font-size:1.4rem;letter-spacing:-0.02em;">AI-First</div>
+            <div class="hsc-label">LLM, RAG &amp; AI Agents<br>integrated into products</div>
           </div>
           <div class="hero-stat-card">
-            <div class="hero-stat-icon">🌏</div>
-            <div class="hero-stat-info">
-              <div class="stat-val">3</div>
-              <div class="stat-desc">Global markets served<br>EU · AU · US</div>
+            <div class="hsc-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
             </div>
+            <div class="hsc-val">3</div>
+            <div class="hsc-label">Global markets served<br>EU · AU · US</div>
           </div>
         </div>
 
@@ -146,149 +135,177 @@
     </div>
   </section>
 
-  <!-- ========== STATS ========== -->
+  <!-- STATS BAR -->
   <div class="stats-bar">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number" data-target="70">0</div>
+          <span class="stat-number" data-target="70">0</span>
           <div class="stat-label">Engineers</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="3">0</div>
+          <span class="stat-number" data-target="3">0</span>
           <div class="stat-label">Global Markets</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="10">0</div>
+          <span class="stat-number" data-target="10">0</span>
           <div class="stat-label">Years Experience</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="50">0</div>
+          <span class="stat-number" data-target="50">0</span>
           <div class="stat-label">Projects Delivered</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ========== WHAT WE BUILD ========== -->
+  <!-- WHAT WE BUILD -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Build</span>
-        <h2 class="section-title">Three pillars of<br>engineering excellence</h2>
-        <p class="section-subtitle">
-          From ecommerce platforms to AI-powered systems, we deliver end-to-end
-          engineering for products built to scale.
-        </p>
-        <span class="accent-line"></span>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:52px; gap:32px; flex-wrap:wrap;">
+        <div>
+          <span class="section-label">What We Build</span>
+          <h2 class="section-title" style="margin-bottom:0;">Three pillars of<br>engineering excellence</h2>
+        </div>
+        <a href="services.html" class="btn btn-outline" style="flex-shrink:0;">Explore All Services</a>
       </div>
 
-      <div class="grid-3">
-        <div class="service-card reveal">
-          <div class="service-card-icon">🛒</div>
-          <h3 class="service-card-title">Ecommerce Platforms</h3>
-          <p class="card-text">High-traffic, multi-country commerce systems built on Magento, Shopify, and Drupal.</p>
-          <ul class="service-list">
-            <li>Magento, Shopify, Drupal</li>
-            <li>High-traffic, multi-country systems</li>
-            <li>Migration &amp; integration between platforms</li>
-          </ul>
+      <div class="feature-rows">
+        <div class="feature-row-item reveal">
+          <span class="feature-row-num">01</span>
+          <div>
+            <h3 class="feature-row-title">Ecommerce Platforms</h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">Magento</span>
+              <span class="tech-tag">Shopify</span>
+              <span class="tech-tag">Drupal</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">High-traffic, multi-country commerce systems built for brands that sell globally. We handle architecture, migration, scaling, and long-term platform health.</p>
+            <ul class="feature-row-list">
+              <li>Multi-country storefronts &amp; localization</li>
+              <li>Platform migration &amp; integration (ERP, SAP, CRM)</li>
+              <li>Headless &amp; composable commerce builds</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card reveal reveal-delay-2">
-          <div class="service-card-icon">⚙️</div>
-          <h3 class="service-card-title">Scalable Product Engineering</h3>
-          <p class="card-text">Custom web &amp; mobile platforms with cloud-native architecture, built for growth from day one.</p>
-          <ul class="service-list">
-            <li>Custom web &amp; mobile platforms</li>
-            <li>High-performance backend systems</li>
-            <li>Cloud-native architecture</li>
-            <li>Built for growth from day one</li>
-          </ul>
+        <div class="feature-row-item reveal reveal-delay-2">
+          <span class="feature-row-num">02</span>
+          <div>
+            <h3 class="feature-row-title">Scalable Product Engineering</h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">NestJS</span>
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">Custom web &amp; mobile platforms with cloud-native architecture designed to grow from day one. We build the technical backbone of your product.</p>
+            <ul class="feature-row-list">
+              <li>Full-stack web &amp; mobile platforms</li>
+              <li>High-performance backend systems</li>
+              <li>Microservices &amp; cloud-native architecture</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card reveal reveal-delay-3">
-          <div class="service-card-icon">🤖</div>
-          <h3 class="service-card-title">AI-Driven Enhancements</h3>
-          <p class="card-text">LLM, RAG, and intelligent automation applied to real products — search, recommendations, workflows.</p>
-          <ul class="service-list">
-            <li>AI agents &amp; workflow automation</li>
-            <li>LLM &amp; RAG implementation</li>
-            <li>AI-enhanced search &amp; personalization</li>
-            <li>Fine-tuned open-source models</li>
-            <li>Recommendation systems</li>
-          </ul>
+        <div class="feature-row-item reveal reveal-delay-3">
+          <span class="feature-row-num">03</span>
+          <div>
+            <h3 class="feature-row-title">AI-Driven Enhancements</h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">AI Agents</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">LLM, RAG, and intelligent automation applied directly inside your product — not as a side experiment, but as a core competitive advantage.</p>
+            <ul class="feature-row-list">
+              <li>AI agents &amp; workflow automation</li>
+              <li>AI-enhanced search &amp; personalization</li>
+              <li>Fine-tuned open-source models</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div style="text-align:center; margin-top: 48px;">
-        <a href="services.html" class="btn btn-outline">Explore All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== CLIENTS STRIP ========== -->
+  <!-- CLIENTS STRIP -->
   <div class="clients-strip">
     <div class="container">
       <p class="clients-strip-label">Trusted by Global Brands</p>
       <div class="clients-logos">
-        <a href="projects.html" class="client-logo-text">GLAMIRA</a>
-        <a href="projects.html" class="client-logo-text">MEKTOUKE</a>
-        <a href="projects.html" class="client-logo-text">ASTEK GROUP</a>
-        <a href="projects.html" class="client-logo-text">TOYOTA</a>
+        <a href="about.html" class="client-logo-text">GLAMIRA</a>
+        <a href="about.html" class="client-logo-text">MEKTOUKE</a>
+        <a href="about.html" class="client-logo-text">ASTEK GROUP</a>
+        <a href="about.html" class="client-logo-text">TOYOTA</a>
       </div>
     </div>
   </div>
 
-  <!-- ========== CAPABILITIES OVERVIEW ========== -->
+  <!-- CAPABILITIES OVERVIEW -->
   <section class="section section-dark">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Our Capabilities</span>
-        <h2 class="section-title">Built for scale<br>from the ground up</h2>
-        <span class="accent-line"></span>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:52px; gap:32px; flex-wrap:wrap;">
+        <div>
+          <span class="section-label">Our Capabilities</span>
+          <h2 class="section-title" style="margin-bottom:0;">Built for scale<br>from the ground up</h2>
+        </div>
+        <a href="about.html" class="btn btn-outline" style="flex-shrink:0;">Learn More About Us</a>
       </div>
 
-      <div class="grid-3">
-        <div class="card card-accent reveal">
-          <div class="capability-icon">🏃</div>
-          <h3 class="card-title">Agile Squads</h3>
-          <p class="card-text">2–20 engineers per team with flexible scaling. We adapt to your project needs and timeline.</p>
+      <div class="num-list">
+        <div class="num-list-item reveal">
+          <span class="num-list-num">01</span>
+          <div>
+            <h3 class="num-list-title">Agile Squads</h3>
+            <p class="num-list-desc">2–20 engineers per team, scaling flexibly. We adapt quickly to changing requirements.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-1">
-          <div class="capability-icon">🛍️</div>
-          <h3 class="card-title">Ecommerce &amp; Social</h3>
-          <p class="card-text">Deep expertise in commerce platforms and applied AI for social and matching applications.</p>
+        <div class="num-list-item reveal reveal-delay-1">
+          <span class="num-list-num">02</span>
+          <div>
+            <h3 class="num-list-title">Ecommerce &amp; Social</h3>
+            <p class="num-list-desc">Deep expertise in commerce platforms and applied AI for social and matching applications.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-2">
-          <div class="capability-icon">🎯</div>
-          <h3 class="card-title">Recommendation Systems</h3>
-          <p class="card-text">Sophisticated recommendation and matching engine builds that drive real user engagement.</p>
+        <div class="num-list-item reveal reveal-delay-2">
+          <span class="num-list-num">03</span>
+          <div>
+            <h3 class="num-list-title">Recommendation Systems</h3>
+            <p class="num-list-desc">Graph databases, collaborative filtering, and ML models that drive real user engagement.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-3">
-          <div class="capability-icon">⚡</div>
-          <h3 class="card-title">Real-time Infra</h3>
-          <p class="card-text">Messaging systems and high-concurrency backends that handle millions of simultaneous users.</p>
+        <div class="num-list-item reveal reveal-delay-3">
+          <span class="num-list-num">04</span>
+          <div>
+            <h3 class="num-list-title">Real-time Infrastructure</h3>
+            <p class="num-list-desc">Messaging systems and high-concurrency backends built for millions of simultaneous users.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-4">
-          <div class="capability-icon">🏗️</div>
-          <h3 class="card-title">Scalable Architecture</h3>
-          <p class="card-text">Kafka, Kubernetes, and Microservice architecture designed for unlimited growth.</p>
+        <div class="num-list-item reveal reveal-delay-4">
+          <span class="num-list-num">05</span>
+          <div>
+            <h3 class="num-list-title">Scalable Architecture</h3>
+            <p class="num-list-desc">Kafka, Kubernetes, and microservices designed for unlimited horizontal growth.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-5">
-          <div class="capability-icon">☁️</div>
-          <h3 class="card-title">Cloud-Native</h3>
-          <p class="card-text">AWS, GCP, OVH with Kubernetes-first deployments for resilience and performance.</p>
+        <div class="num-list-item reveal reveal-delay-5">
+          <span class="num-list-num">06</span>
+          <div>
+            <h3 class="num-list-title">Cloud-Native</h3>
+            <p class="num-list-desc">AWS, GCP, OVH with Kubernetes-first deployments, IaC, and zero-downtime pipelines.</p>
+          </div>
         </div>
-      </div>
-
-      <div style="text-align:center; margin-top:48px;">
-        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== CTA ========== -->
+  <!-- CTA -->
   <section class="cta-section">
     <div class="container">
       <span class="section-label">Ready to Scale?</span>
@@ -305,7 +322,7 @@
 
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

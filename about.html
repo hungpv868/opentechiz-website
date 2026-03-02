@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1a">
+  <meta name="theme-color" content="#06091a">
   <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
   <title>About Us | Open Techiz - Product Engineering Company</title>
   <meta name="description" content="Open Techiz — 70 engineers, 10 years experience, 3 global markets. We build scalable digital platforms for SMEs and global brands. Learn how we work.">
@@ -22,8 +22,8 @@
   <meta name="twitter:image" content="https://opentechiz.com/images/og-image.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -68,25 +68,57 @@
   </nav>
 
   <main role="main">
-  <!-- PAGE HERO -->
-  <section class="page-hero">
+
+  <!-- ABOUT HERO — editorial split: giant stat left, mission right -->
+  <section class="about-hero-section">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <span>›</span>
-        <span>About Us</span>
-      </nav>
-      <span class="section-label">Who We Are</span>
-      <h1 class="page-hero-title">70 Engineers.<br>One Mission — Scale.</h1>
-      <p class="page-hero-desc">
-        Open Techiz is a product engineering company delivering scalable digital platforms
-        for growing SMEs and global brands. We combine agile squads, deep technical expertise,
-        and applied AI to build systems that last.
-      </p>
-      <div class="markets">
-        <span class="market-badge"><span class="flag">🇪🇺</span> Europe</span>
-        <span class="market-badge"><span class="flag">🇦🇺</span> Australia</span>
-        <span class="market-badge"><span class="flag">🇺🇸</span> United States</span>
+      <div class="about-hero-inner">
+
+        <div class="about-hero-left">
+          <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:32px;">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>About Us</span>
+          </nav>
+          <span class="about-stat-label">Product Engineers</span>
+          <span class="about-stat-giant" data-target="70">70</span>
+          <span class="about-stat-sublabel">across all technical disciplines</span>
+        </div>
+
+        <div class="about-hero-right">
+          <div>
+            <h1 class="page-hero-title" style="margin-bottom:20px;">One Mission —<br>Scale.</h1>
+            <p class="about-hero-desc">
+              Open Techiz is a product engineering company delivering scalable digital platforms
+              for growing SMEs and global brands. We combine agile squads, deep technical expertise,
+              and applied AI to build systems built to last.
+            </p>
+            <div class="about-hero-cta">
+              <a href="contact.html" class="btn btn-primary">Work With Us</a>
+            </div>
+          </div>
+
+          <!-- Stat strip at bottom of right panel -->
+          <div class="stat-strip">
+            <div class="stat-strip-item">
+              <span class="stat-strip-num" data-target="10">10</span>
+              <span class="stat-strip-label">Years</span>
+            </div>
+            <div class="stat-strip-item">
+              <span class="stat-strip-num" data-target="50">50</span>
+              <span class="stat-strip-label">Products</span>
+            </div>
+            <div class="stat-strip-item">
+              <span class="stat-strip-num" data-target="3">3</span>
+              <span class="stat-strip-label">Markets</span>
+            </div>
+            <div class="stat-strip-item">
+              <span class="stat-strip-num">24/7</span>
+              <span class="stat-strip-label">Support</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -94,38 +126,39 @@
   <!-- COMPANY OVERVIEW -->
   <section class="section">
     <div class="container">
-      <div class="grid-2" style="gap: 64px; align-items: center;">
+      <div class="grid-2" style="gap: 80px; align-items: start;">
         <div>
-          <span class="section-label">Our Story</span>
+          <span class="eyebrow">Our Story</span>
           <h2 class="section-title">Engineering Growth Through Scalable Systems</h2>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+          <p style="color: var(--text-secondary); line-height: 1.85; margin-bottom: 20px; font-size: 1rem;">
             Founded with a clear mission: to help companies build digital products that don't just launch —
             they scale. We work with growing SMEs and global enterprise brands, providing the engineering
             muscle they need without the overhead of building large internal teams.
           </p>
-          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
-            Our 70-engineer team operates in flexible agile squads (2–20 engineers), adapting to project needs
-            from initial architecture to long-term product evolution. We operate as a seamless extension of
-            your in-house team.
+          <p style="color: var(--text-secondary); line-height: 1.85; font-size: 1rem;">
+            Our team operates in flexible agile squads (2–20 engineers), adapting to project needs
+            from initial architecture to long-term product evolution — as a seamless extension of your in-house team.
           </p>
-          <a href="contact.html" class="btn btn-primary">Work With Us</a>
         </div>
-        <div class="grid-2" style="gap: 16px;">
-          <div class="card" style="text-align:center; padding: 32px 20px;">
-            <div class="stat-number" style="font-size: 2.4rem;" data-target="70">0</div>
-            <div class="stat-label">Engineers</div>
-          </div>
-          <div class="card" style="text-align:center; padding: 32px 20px;">
-            <div class="stat-number" style="font-size: 2.4rem;" data-target="10">0</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-          <div class="card" style="text-align:center; padding: 32px 20px;">
-            <div class="stat-number" style="font-size: 2.4rem;" data-target="3">0</div>
-            <div class="stat-label">Global Markets</div>
-          </div>
-          <div class="card" style="text-align:center; padding: 32px 20px;">
-            <div class="stat-number" style="font-size: 2.4rem;" data-target="50">0</div>
-            <div class="stat-label">Products Delivered</div>
+        <div style="padding-top: 8px;">
+          <span class="eyebrow">Clients &amp; Markets</span>
+          <p style="color: var(--text-secondary); line-height: 1.85; font-size: 1rem; margin-bottom: 24px;">
+            We serve growing SMEs and global enterprise brands across Europe, Australia, and the United States.
+            Our clients include GLAMIRA, Mektouke, Astek Group, and Toyota.
+          </p>
+          <div class="markets" style="margin-bottom: 28px;">
+            <span class="market-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:13px;height:13px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+              Europe
+            </span>
+            <span class="market-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:13px;height:13px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+              Australia
+            </span>
+            <span class="market-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:13px;height:13px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+              United States
+            </span>
           </div>
         </div>
       </div>
@@ -135,62 +168,53 @@
   <!-- CAPABILITIES -->
   <section class="section section-dark">
     <div class="container">
-      <div class="section-header">
+      <div style="margin-bottom:48px;">
         <span class="section-label">Core Capabilities</span>
         <h2 class="section-title">What makes us different</h2>
-        <p class="section-subtitle">
-          Six core capabilities that define how we work and what we deliver.
-        </p>
-        <span class="accent-line"></span>
       </div>
-      <div class="grid-3">
-        <div class="card card-accent reveal">
-          <div class="capability-icon">🏃</div>
-          <h3 class="card-title">Agile Squads</h3>
-          <p class="card-text">
-            Flexible teams of 2–20 engineers that scale with your project. We adapt quickly to changing
-            requirements and maintain consistent velocity throughout the engagement.
-          </p>
+
+      <div class="num-list">
+        <div class="num-list-item reveal">
+          <span class="num-list-num">01</span>
+          <div>
+            <h3 class="num-list-title">Agile Squads</h3>
+            <p class="num-list-desc">Flexible teams of 2–20 engineers. We scale with your project and maintain consistent velocity throughout.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-1">
-          <div class="capability-icon">🛍️</div>
-          <h3 class="card-title">Ecommerce &amp; Social</h3>
-          <p class="card-text">
-            Deep expertise in ecommerce platforms and social applications, with applied AI
-            for personalization, recommendation, and matching features.
-          </p>
+        <div class="num-list-item reveal reveal-delay-1">
+          <span class="num-list-num">02</span>
+          <div>
+            <h3 class="num-list-title">Ecommerce &amp; Social</h3>
+            <p class="num-list-desc">Deep expertise in commerce platforms and social applications with applied AI for personalization and matching.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-2">
-          <div class="capability-icon">🎯</div>
-          <h3 class="card-title">Recommendation Systems</h3>
-          <p class="card-text">
-            Sophisticated recommendation and matching engine builds using graph databases,
-            collaborative filtering, and machine learning models.
-          </p>
+        <div class="num-list-item reveal reveal-delay-2">
+          <span class="num-list-num">03</span>
+          <div>
+            <h3 class="num-list-title">Recommendation Systems</h3>
+            <p class="num-list-desc">Graph databases, collaborative filtering, and ML models that drive real user engagement at scale.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-3">
-          <div class="capability-icon">⚡</div>
-          <h3 class="card-title">Real-time Infrastructure</h3>
-          <p class="card-text">
-            Messaging systems and high-concurrency backends capable of handling millions of
-            simultaneous connections with sub-second latency.
-          </p>
+        <div class="num-list-item reveal reveal-delay-3">
+          <span class="num-list-num">04</span>
+          <div>
+            <h3 class="num-list-title">Real-time Infrastructure</h3>
+            <p class="num-list-desc">Messaging systems and high-concurrency backends handling millions of simultaneous connections at sub-second latency.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-4">
-          <div class="capability-icon">🏗️</div>
-          <h3 class="card-title">Scalable Architecture</h3>
-          <p class="card-text">
-            Kafka, Kubernetes, and microservice architecture that enables teams to build,
-            deploy, and scale independently without system-wide coupling.
-          </p>
+        <div class="num-list-item reveal reveal-delay-4">
+          <span class="num-list-num">05</span>
+          <div>
+            <h3 class="num-list-title">Scalable Architecture</h3>
+            <p class="num-list-desc">Kafka, Kubernetes, and microservices designed to scale teams and systems independently without coupling.</p>
+          </div>
         </div>
-        <div class="card card-accent reveal reveal-delay-5">
-          <div class="capability-icon">☁️</div>
-          <h3 class="card-title">Cloud-Native</h3>
-          <p class="card-text">
-            AWS, GCP, OVH with Kubernetes-first deployments. Infrastructure as code,
-            auto-scaling, and zero-downtime deployment pipelines.
-          </p>
+        <div class="num-list-item reveal reveal-delay-5">
+          <span class="num-list-num">06</span>
+          <div>
+            <h3 class="num-list-title">Cloud-Native</h3>
+            <p class="num-list-desc">AWS, GCP, OVH with IaC, auto-scaling, and zero-downtime deployment pipelines from day one.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -205,66 +229,35 @@
         <p class="section-subtitle">
           We combine battle-tested software engineering practices with the latest AI-augmented tools to deliver faster, safer, and higher-quality software.
         </p>
-        <span class="accent-line"></span>
       </div>
 
       <div class="approach-grid">
         <div class="approach-card traditional">
-          <h3 class="approach-card-title">Traditional Software Development</h3>
+          <h3 class="approach-card-title">
+            Traditional Software Development
+            <span class="approach-badge">Proven</span>
+          </h3>
           <ul class="approach-list">
-            <li>
-              <span class="check-icon">✓</span>
-              Agile methodologies
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Clear sprint planning &amp; backlog management
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Peer code reviews
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Security &amp; QA processes
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              CI/CD &amp; DevOps best practices
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Enterprise-grade documentation
-            </li>
+            <li><span class="check-icon">✓</span> Agile methodologies</li>
+            <li><span class="check-icon">✓</span> Clear sprint planning &amp; backlog management</li>
+            <li><span class="check-icon">✓</span> Peer code reviews</li>
+            <li><span class="check-icon">✓</span> Security &amp; QA processes</li>
+            <li><span class="check-icon">✓</span> CI/CD &amp; DevOps best practices</li>
+            <li><span class="check-icon">✓</span> Enterprise-grade documentation</li>
           </ul>
         </div>
         <div class="approach-card ai-augmented">
-          <h3 class="approach-card-title">AI-Augmented Development</h3>
+          <h3 class="approach-card-title">
+            AI-Augmented Development
+            <span class="approach-badge">AI-Enhanced</span>
+          </h3>
           <ul class="approach-list">
-            <li>
-              <span class="check-icon">✓</span>
-              AI-assisted coding (e.g., Claude Code)
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Faster prototyping &amp; iteration
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Automated test generation
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              AI-supported code review &amp; optimization
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              AI-supported vulnerable code detection
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              Optimization of AI-related cost and resource usage
-            </li>
+            <li><span class="check-icon">✓</span> AI-assisted coding (e.g., Claude Code)</li>
+            <li><span class="check-icon">✓</span> Faster prototyping &amp; iteration</li>
+            <li><span class="check-icon">✓</span> Automated test generation</li>
+            <li><span class="check-icon">✓</span> AI-supported code review &amp; optimization</li>
+            <li><span class="check-icon">✓</span> AI-supported vulnerable code detection</li>
+            <li><span class="check-icon">✓</span> Optimization of AI-related cost and resource usage</li>
           </ul>
         </div>
       </div>
@@ -278,7 +271,6 @@
         <span class="section-label">Engagement Models</span>
         <h2 class="section-title">Work with us your way</h2>
         <p class="section-subtitle">Two flexible engagement models designed for different project needs and business goals.</p>
-        <span class="accent-line"></span>
       </div>
 
       <div class="engagement-grid">
@@ -320,7 +312,7 @@
       <p class="section-subtitle">Contact us for a free consultation and let's design the right engineering approach for your product.</p>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-primary">Get a Free Consultation</a>
-        <a href="projects.html" class="btn btn-outline">See Our Work</a>
+        <a href="services.html" class="btn btn-outline">See Our Services</a>
       </div>
     </div>
   </section>
