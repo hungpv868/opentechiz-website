@@ -144,4 +144,101 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --- AI Tech Carousel --- */
+  (function () {
+    const track = document.getElementById('aisTechTrack');
+    if (!track) return;
+
+    const cards = Array.from(track.querySelectorAll('.ais-tc-card'));
+    const prevBtn = document.getElementById('aisTcPrev');
+    const nextBtn = document.getElementById('aisTcNext');
+    const dotsContainer = document.getElementById('aisTcDots');
+
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+
+    function getCardsVisible() {
+      if (window.innerWidth < 640) return 1;
+      if (window.innerWidth < 1024) return 2;
+      return 3;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, cards.length - getCardsVisible());
+    }
+
+    function updateCarousel(animate) {
+      if (animate === false) track.style.transition = 'none';
+      else track.style.transition = '';
+
+      const card = cards[0];
+      const gap = 24;
+      const offset = currentIndex * (card.offsetWidth + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+
+      const max = getMaxIndex();
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= max;
+
+      const dots = dotsContainer.querySelectorAll('.ais-tc-dot');
+      dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      const max = getMaxIndex();
+      for (let i = 0; i <= max; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'ais-tc-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => { currentIndex = i; updateCarousel(); stopAuto(); startAuto(); });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function goNext() {
+      const max = getMaxIndex();
+      currentIndex = currentIndex < max ? currentIndex + 1 : 0;
+      updateCarousel();
+    }
+
+    function goPrev() {
+      const max = getMaxIndex();
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : max;
+      updateCarousel();
+    }
+
+    function startAuto() {
+      autoPlayTimer = setInterval(goNext, 4000);
+    }
+
+    function stopAuto() {
+      clearInterval(autoPlayTimer);
+    }
+
+    prevBtn.addEventListener('click', () => { goPrev(); stopAuto(); startAuto(); });
+    nextBtn.addEventListener('click', () => { goNext(); stopAuto(); startAuto(); });
+
+    const outer = document.querySelector('.ais-tc-outer');
+    if (outer) {
+      outer.addEventListener('mouseenter', stopAuto);
+      outer.addEventListener('mouseleave', startAuto);
+    }
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        currentIndex = Math.min(currentIndex, getMaxIndex());
+        buildDots();
+        updateCarousel(false);
+        setTimeout(() => { track.style.transition = ''; }, 50);
+      }, 150);
+    });
+
+    buildDots();
+    updateCarousel();
+    startAuto();
+  })();
+
 });

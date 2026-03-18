@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#06091a">
-  <script>if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light");</script>
+  <script>if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light");</script>
   <title>AI Services — Chatbot, Recommendations &amp; Workflow Automation | Open Techiz</title>
-  <meta name="description" content="Real AI systems in production: chatbots, recommendation engines, workflow automation, RAG pipelines. 2× throughput, −70% process time, ROI in 90 days. Built by Open Techiz.">
+  <meta name="description"
+    content="Real AI systems in production: chatbots, recommendation engines, workflow automation, RAG pipelines. 2× throughput, −70% process time, ROI in 90 days. Built by Open Techiz.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://opentechiz.com/ai-service">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -19,8 +21,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,6 +37,7 @@
   }
   </script>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -47,11 +52,26 @@
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="services.html" class="nav-link">Services</a></li>
           <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li class="nav-ai-service-wrap"><a href="ai-service.html" class="nav-ai-service">AI Service</a></li>
           <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
         </ul>
         <button class="theme-toggle" aria-label="Toggle light/dark mode">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
         </button>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -62,674 +82,834 @@
 
   <main role="main">
 
-  <!-- =============================================
+    <!-- =============================================
        HERO — Centered gradient layout
        ============================================= -->
-  <section class="ais-hero">
-    <!-- Animated background orbs -->
-    <div class="ais-orb ais-orb--1" aria-hidden="true"></div>
-    <div class="ais-orb ais-orb--2" aria-hidden="true"></div>
-    <div class="ais-orb ais-orb--3" aria-hidden="true"></div>
+    <section class="ais-hero">
+      <!-- Animated background orbs -->
+      <div class="ais-orb ais-orb--1" aria-hidden="true"></div>
+      <div class="ais-orb ais-orb--2" aria-hidden="true"></div>
+      <div class="ais-orb ais-orb--3" aria-hidden="true"></div>
 
-    <div class="container">
-      <div class="ais-hero-v3">
+      <div class="container">
+        <div class="ais-hero-v3">
 
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          <span>AI Services</span>
-        </nav>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <span>AI Services</span>
+          </nav>
 
-        <div class="ais-hero-label reveal">
-          <span class="ais-live-dot"></span>
-          In production across 3 continents
-        </div>
+          <div class="ais-hero-label reveal">
+            <span class="ais-live-dot"></span>
+            In production across 3 continents
+          </div>
 
-        <h1 class="ais-hero-v3-title reveal">
-          AI systems that <span class="grad-text">automate</span> the work<br>
-          your team <span class="grad-text">shouldn't be doing</span>
-        </h1>
+          <h1 class="ais-hero-v3-title reveal">
+            AI systems that <span class="grad-text">automate</span> the work<br>
+            your team <span class="grad-text">shouldn't be doing</span>
+          </h1>
 
-        <p class="ais-hero-v3-desc reveal reveal-delay-1">
-          We build and deploy four types of production AI: <strong>AI Chatbots</strong> for 24/7 customer support,
-          <strong>Recommendation Engines</strong> that drive revenue, <strong>Voice AI</strong> for high-traffic environments,
-          and <strong>Workflow Automation</strong> that eliminates manual processing — integrated into your existing stack.
-        </p>
+          <p class="ais-hero-v3-desc reveal reveal-delay-1">
+            We build and deploy four types of production AI: <strong>AI Chatbots</strong> for 24/7 customer support,
+            <strong>Recommendation Engines</strong> that drive revenue, <strong>Voice AI</strong> for high-traffic
+            environments,
+            and <strong>Workflow Automation</strong> that eliminates manual processing — integrated into your existing
+            stack.
+          </p>
 
-        <div class="ais-hero-v3-actions reveal reveal-delay-2">
-          <a href="contact.html" class="btn-grad">Book a Demo</a>
-          <a href="#showcase" class="btn btn-outline">
-            See What We Build
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </a>
-        </div>
+          <div class="ais-hero-v3-actions reveal reveal-delay-2">
+            <a href="contact.html" class="btn-grad">Book a Demo</a>
+            <a href="#showcase" class="btn btn-outline">
+              See What We Build
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
 
-        <div class="ais-hero-v3-tags reveal reveal-delay-2">
-          <span>LLM &amp; RAG</span>
-          <span>AI Agents</span>
-          <span>System Integration</span>
-          <span>24/7 Operation</span>
-          <span>Multilingual</span>
+          <div class="ais-hero-v3-tags reveal reveal-delay-2">
+            <span>LLM &amp; RAG</span>
+            <span>AI Agents</span>
+            <span>System Integration</span>
+            <span>24/7 Operation</span>
+            <span>Multilingual</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =============================================
+    <!-- =============================================
        IMPACT METRICS — Redesigned
        ============================================= -->
-  <section class="ais-impact-section" aria-label="Key performance metrics">
-    <div class="ais-impact-inner">
-      <div class="ais-impact-header reveal">
-        <span class="ais-impact-eyebrow">Measurable outcomes</span>
-        <h2 class="ais-impact-heading">Results that show up<br>on your bottom line</h2>
-        <p class="ais-impact-subtext">Numbers from real deployments — not projections.</p>
+    <section class="ais-impact-section" aria-label="Key performance metrics">
+      <div class="ais-impact-inner">
+        <div class="ais-impact-header reveal">
+          <span class="ais-impact-eyebrow">Measurable outcomes</span>
+          <h2 class="ais-impact-heading">Results that show up<br>on your bottom line</h2>
+          <p class="ais-impact-subtext">Numbers from real deployments — not projections.</p>
+        </div>
+        <div class="ais-impact-bento reveal reveal-delay-1">
+          <div class="ais-ib-card ais-ib-card--large">
+            <div class="ais-ib-glow"></div>
+            <span class="ais-ib-tag">Throughput</span>
+            <div class="ais-ib-val"><span class="stat-number" data-target="2">0</span>×</div>
+            <p class="ais-ib-desc">Average output increase across automated workflows — same team, double the capacity.
+            </p>
+            <div class="ais-ib-bar">
+              <div class="ais-ib-bar-fill" style="width:100%"></div>
+            </div>
+          </div>
+          <div class="ais-ib-card ais-ib-card--large ais-ib-card--accent2">
+            <div class="ais-ib-glow ais-ib-glow--blue"></div>
+            <span class="ais-ib-tag">Process time</span>
+            <div class="ais-ib-val">−<span class="stat-number" data-target="70">0</span>%</div>
+            <p class="ais-ib-desc">Reduction in cycle time when AI handles routing, classification, and queue
+              management.</p>
+            <div class="ais-ib-bar">
+              <div class="ais-ib-bar-fill ais-ib-bar-fill--blue" style="width:70%"></div>
+            </div>
+          </div>
+          <div class="ais-ib-card ais-ib-card--small">
+            <div class="ais-ib-glow ais-ib-glow--purple"></div>
+            <span class="ais-ib-tag">Time to ROI</span>
+            <div class="ais-ib-val"><span class="stat-number" data-target="90">0</span>d</div>
+            <p class="ais-ib-desc">First measurable return, typically from a single automated workflow.</p>
+          </div>
+          <div class="ais-ib-card ais-ib-card--small ais-ib-card--uptime">
+            <div class="ais-ib-glow"></div>
+            <span class="ais-ib-tag">Uptime</span>
+            <div class="ais-ib-val">24/7</div>
+            <p class="ais-ib-desc">Autonomous operation — no sick days, no shift gaps, no manual handoffs.</p>
+            <div class="ais-ib-pulse">
+              <span class="ais-ib-pulse-dot"></span>
+              <span class="ais-ib-pulse-text">Live systems running</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ais-impact-bento reveal reveal-delay-1">
-        <div class="ais-ib-card ais-ib-card--large">
-          <div class="ais-ib-glow"></div>
-          <span class="ais-ib-tag">Throughput</span>
-          <div class="ais-ib-val"><span class="stat-number" data-target="2">0</span>×</div>
-          <p class="ais-ib-desc">Average output increase across automated workflows — same team, double the capacity.</p>
-          <div class="ais-ib-bar">
-            <div class="ais-ib-bar-fill" style="width:100%"></div>
-          </div>
-        </div>
-        <div class="ais-ib-card ais-ib-card--large ais-ib-card--accent2">
-          <div class="ais-ib-glow ais-ib-glow--blue"></div>
-          <span class="ais-ib-tag">Process time</span>
-          <div class="ais-ib-val">−<span class="stat-number" data-target="70">0</span>%</div>
-          <p class="ais-ib-desc">Reduction in cycle time when AI handles routing, classification, and queue management.</p>
-          <div class="ais-ib-bar">
-            <div class="ais-ib-bar-fill ais-ib-bar-fill--blue" style="width:70%"></div>
-          </div>
-        </div>
-        <div class="ais-ib-card ais-ib-card--small">
-          <div class="ais-ib-glow ais-ib-glow--purple"></div>
-          <span class="ais-ib-tag">Time to ROI</span>
-          <div class="ais-ib-val"><span class="stat-number" data-target="90">0</span>d</div>
-          <p class="ais-ib-desc">First measurable return, typically from a single automated workflow.</p>
-        </div>
-        <div class="ais-ib-card ais-ib-card--small ais-ib-card--uptime">
-          <div class="ais-ib-glow"></div>
-          <span class="ais-ib-tag">Uptime</span>
-          <div class="ais-ib-val">24/7</div>
-          <p class="ais-ib-desc">Autonomous operation — no sick days, no shift gaps, no manual handoffs.</p>
-          <div class="ais-ib-pulse">
-            <span class="ais-ib-pulse-dot"></span>
-            <span class="ais-ib-pulse-text">Live systems running</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =============================================
-       CLIENT LOGOS — trust signal
-       ============================================= -->
-  <div class="clients-strip" aria-label="Trusted by">
-    <p class="clients-strip-label">In production for</p>
-    <div class="clients-logos">
-      <a href="projects.html" class="client-logo-text" aria-label="GLAMIRA case study">GLAMIRA</a>
-      <a href="projects.html" class="client-logo-text" aria-label="MEKTOUKE case study">MEKTOUKE</a>
-      <a href="projects.html" class="client-logo-text" aria-label="Astek Group case study">ASTEK GROUP</a>
-      <a href="projects.html" class="client-logo-text" aria-label="Toyota case study">TOYOTA</a>
-    </div>
-  </div>
-
-  <!-- =============================================
+    <!-- =============================================
        SHOWCASE — Alternating rows with CSS visuals (no images)
        ============================================= -->
-  <section class="ais-showcase-section" id="showcase" aria-label="AI system showcase">
+    <section class="ais-showcase-section" id="showcase" aria-label="AI system showcase">
 
-    <!-- Row 1: Chatbot & Voice -->
-    <div class="ais-showcase-row">
-      <div class="ais-showcase-content reveal">
-        <span class="ais-showcase-eyebrow">01 — Customer Interaction</span>
-        <h2 class="ais-showcase-title">AI Chatbot &amp; Support Automation</h2>
-        <p class="ais-showcase-desc">
-          Your customers get instant, accurate answers — day or night, across every channel.
-          The chatbot handles up to 70% of inbound queries autonomously, escalating only what needs a human.
-          Your support team stops answering the same questions and starts solving real problems.
-        </p>
-        <ul class="ais-showcase-list" role="list">
-          <li>Responds instantly across chat, WhatsApp, voice, and web widget</li>
-          <li>Handles FAQs, order tracking, returns, and ticket creation</li>
-          <li>Plugs into CRM, Zendesk, Freshdesk, and custom APIs</li>
-          <li>Understands and replies in 30+ languages out of the box</li>
-        </ul>
-        <div class="tech-tags">
-          <span class="tech-tag">LangChain</span>
-          <span class="tech-tag">RAG</span>
-          <span class="tech-tag">WhisperAI</span>
-          <span class="tech-tag">OpenAI</span>
-        </div>
+      <!-- Section title -->
+      <div class="ais-showcase-section-header">
+        <span class="section-label">What we build</span>
+        <h2 class="section-title">Some prominent AI services</h2>
       </div>
-      <!-- CSS visual panel: Chat mockup -->
-      <div class="ais-sv ais-sv--chat" aria-hidden="true">
-        <div class="ais-sv-glow ais-sv-glow--green"></div>
-        <div class="ais-sv-kpi">
-          <span class="ais-sv-kpi-num">70%</span>
-          <span class="ais-sv-kpi-text">queries automated</span>
-        </div>
-        <div class="ais-chat-mock">
-          <div class="ais-chat-header">
-            <span class="ais-chat-dot"></span>
-            AI Support — Online
-          </div>
-          <div class="ais-chat-body">
-            <div class="ais-msg ais-msg--user">How do I track my order?</div>
-            <div class="ais-msg ais-msg--ai">Order #12847 is out for delivery and arrives today by 6 PM.</div>
-            <div class="ais-msg ais-msg--user">Can I change the delivery address?</div>
-            <div class="ais-msg ais-msg--ai ais-msg--typing">
-              <span></span><span></span><span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Row 2: Recommendations (reversed) -->
-    <div class="ais-showcase-row ais-showcase-row--rev">
-      <div class="ais-showcase-content reveal">
-        <span class="ais-showcase-eyebrow">02 — Revenue Growth</span>
-        <h2 class="ais-showcase-title">AI Recommendation Engine</h2>
-        <p class="ais-showcase-desc">
-          Every visitor sees different products — ranked by what they're most likely to buy.
-          The engine learns from clicks, purchases, and browsing patterns to improve continuously.
-          For GLAMIRA, this doubled click-through rates across millions of product SKUs globally.
-        </p>
-        <ul class="ais-showcase-list" role="list">
-          <li>Personalized ranking for every user in real time (&lt;100ms response)</li>
-          <li>Combines collaborative filtering and content-based signals</li>
-          <li>Built-in A/B testing so you can measure impact directly</li>
-          <li>Proven in ecommerce, social, and content platforms at scale</li>
-        </ul>
-        <div class="tech-tags">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Redis</span>
-          <span class="tech-tag">Elasticsearch</span>
-          <span class="tech-tag">FastAPI</span>
-        </div>
-      </div>
-      <!-- CSS visual panel: Recommendation mock -->
-      <div class="ais-sv ais-sv--rec" aria-hidden="true">
-        <div class="ais-sv-glow ais-sv-glow--purple"></div>
-        <div class="ais-sv-kpi">
-          <span class="ais-sv-kpi-num">2×</span>
-          <span class="ais-sv-kpi-text">click-through rate</span>
-        </div>
-        <div class="ais-rec-mock">
-          <div class="ais-rec-header">AI Recommendations — Personalized for you</div>
-          <div class="ais-rec-item">
-            <div class="ais-rec-thumb ais-rec-thumb--1"></div>
-            <div class="ais-rec-info">
-              <div class="ais-rec-name">Diamond Ring — Classic</div>
-              <div class="ais-rec-bar"><span style="width:98%"></span></div>
-              <div class="ais-rec-pct">98% match</div>
-            </div>
-          </div>
-          <div class="ais-rec-item">
-            <div class="ais-rec-thumb ais-rec-thumb--2"></div>
-            <div class="ais-rec-info">
-              <div class="ais-rec-name">Sapphire Pendant</div>
-              <div class="ais-rec-bar"><span style="width:94%"></span></div>
-              <div class="ais-rec-pct">94% match</div>
-            </div>
-          </div>
-          <div class="ais-rec-item">
-            <div class="ais-rec-thumb ais-rec-thumb--3"></div>
-            <div class="ais-rec-info">
-              <div class="ais-rec-name">Gold Bracelet</div>
-              <div class="ais-rec-bar"><span style="width:91%"></span></div>
-              <div class="ais-rec-pct">91% match</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 3: Voice AI / Airport -->
-    <div class="ais-showcase-row">
-      <div class="ais-showcase-content reveal">
-        <span class="ais-showcase-eyebrow">03 — Voice &amp; Conversational AI</span>
-        <h2 class="ais-showcase-title">Voice AI for High-Volume Environments</h2>
-        <p class="ais-showcase-desc">
-          A voice assistant that listens, understands, and responds — live, in any language.
-          Built for environments where staff can't keep up with demand: airports, transit hubs, public services.
-          It cut front-desk query volume by 60% for our APAC transportation client, with zero degradation in service quality.
-        </p>
-        <ul class="ais-showcase-list" role="list">
-          <li>Real-time speech recognition with under 500ms response latency</li>
-          <li>Pulls live data: flight status, gate changes, delays, wayfinding</li>
-          <li>Operates 24/7 at kiosks, mobile apps, and web portals</li>
-          <li>Handles 30+ languages with natural conversation flow</li>
-        </ul>
-        <div class="tech-tags">
-          <span class="tech-tag">WhisperAI</span>
-          <span class="tech-tag">LLM</span>
-          <span class="tech-tag">WebSockets</span>
-          <span class="tech-tag">NestJS</span>
-        </div>
-      </div>
-      <!-- CSS visual panel: Voice waveform -->
-      <div class="ais-sv ais-sv--voice" aria-hidden="true">
-        <div class="ais-sv-glow ais-sv-glow--blue"></div>
-        <div class="ais-sv-kpi">
-          <span class="ais-sv-kpi-num">−60%</span>
-          <span class="ais-sv-kpi-text">front-desk queries</span>
-        </div>
-        <div class="ais-voice-mock">
-          <div class="ais-voice-icon-wrap">
-            <div class="ais-voice-ring ais-voice-ring--1"></div>
-            <div class="ais-voice-ring ais-voice-ring--2"></div>
-            <div class="ais-voice-icon-bg">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
-            </div>
-          </div>
-          <div class="ais-waveform" role="img" aria-label="Voice waveform">
-            <div class="ais-wb" style="--p:8px;  animation-delay:0s"></div>
-            <div class="ais-wb" style="--p:18px; animation-delay:0.08s"></div>
-            <div class="ais-wb" style="--p:28px; animation-delay:0.16s"></div>
-            <div class="ais-wb" style="--p:36px; animation-delay:0.24s"></div>
-            <div class="ais-wb" style="--p:22px; animation-delay:0.32s"></div>
-            <div class="ais-wb" style="--p:40px; animation-delay:0.4s"></div>
-            <div class="ais-wb" style="--p:28px; animation-delay:0.48s"></div>
-            <div class="ais-wb" style="--p:14px; animation-delay:0.56s"></div>
-            <div class="ais-wb" style="--p:32px; animation-delay:0.64s"></div>
-            <div class="ais-wb" style="--p:40px; animation-delay:0.72s"></div>
-            <div class="ais-wb" style="--p:24px; animation-delay:0.8s"></div>
-            <div class="ais-wb" style="--p:18px; animation-delay:0.88s"></div>
-            <div class="ais-wb" style="--p:34px; animation-delay:0.96s"></div>
-            <div class="ais-wb" style="--p:20px; animation-delay:1.04s"></div>
-            <div class="ais-wb" style="--p:12px; animation-delay:1.12s"></div>
-            <div class="ais-wb" style="--p:26px; animation-delay:1.2s"></div>
-          </div>
-          <div class="ais-voice-status">
-            <span class="ais-voice-live"></span>
-            Processing in 30+ languages
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 4: Workflow (reversed) -->
-    <div class="ais-showcase-row ais-showcase-row--rev">
-      <div class="ais-showcase-content reveal">
-        <span class="ais-showcase-eyebrow">04 — Internal Operations</span>
-        <h2 class="ais-showcase-title">AI Workflow Automation</h2>
-        <p class="ais-showcase-desc">
-          Every email, ticket, or form submission is read, classified, and routed automatically —
-          no human triage required. The AI extracts what matters, creates the task, assigns it to
-          the right team, and flags exceptions. Processing time drops by 70% on day one.
-        </p>
-        <ul class="ais-showcase-list" role="list">
-          <li>Reads unstructured inputs and converts them to structured, assigned tasks</li>
-          <li>Integrates with CRM, Notion, Jira, N8N, and custom backends</li>
-          <li>Configurable approval gates and escalation rules</li>
-          <li>Full audit trail — every action logged and reportable</li>
-        </ul>
-        <div class="tech-tags">
-          <span class="tech-tag">LLM Agents</span>
-          <span class="tech-tag">N8N</span>
-          <span class="tech-tag">Kafka</span>
-          <span class="tech-tag">PostgreSQL</span>
-        </div>
-      </div>
-      <!-- CSS visual panel: Workflow flow diagram -->
-      <div class="ais-sv ais-sv--flow" aria-hidden="true">
-        <div class="ais-sv-glow ais-sv-glow--orange"></div>
-        <div class="ais-sv-kpi">
-          <span class="ais-sv-kpi-num">−70%</span>
-          <span class="ais-sv-kpi-text">process time</span>
-        </div>
-        <div class="ais-flow-mock">
-          <div class="ais-fnode">
-            <div class="ais-fnode-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-            </div>
-            <span>Input</span>
-          </div>
-          <div class="ais-fconn">
-            <div class="ais-fpulse"></div>
-          </div>
-          <div class="ais-fnode ais-fnode--ai">
-            <div class="ais-fnode-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg>
-            </div>
-            <span>AI Agent</span>
-          </div>
-          <div class="ais-fconn">
-            <div class="ais-fpulse ais-fpulse--d2"></div>
-          </div>
-          <div class="ais-fnode ais-fnode--out">
-            <div class="ais-fnode-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <span>Task</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- =============================================
-       PROJECTS — Real case studies with metrics
-       ============================================= -->
-  <section class="section section-dark" id="projects" aria-label="Client projects">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-label">In Production</span>
-        <h2 class="section-title">Live deployments. Verified results.</h2>
-        <p class="section-subtitle">
-          Three AI systems running in production today — each measured, tracked, and proven on real traffic.
-          No demos. No pilots. Shipped and scaled.
-        </p>
-      </div>
-      <div class="ais-project-grid">
-
-        <div class="ais-project-card reveal">
-          <div class="ais-project-client">GLAMIRA</div>
-          <div class="ais-project-type">Global Jewelry Ecommerce · EU / APAC / US</div>
-          <p class="ais-project-desc">
-            Built three AI systems for a single platform: a support chatbot handling 70% of queries
-            automatically, a hybrid recommendation engine serving personalized results across millions
-            of SKUs, and an AI image search — all integrated into a high-traffic Magento setup
-            serving customers across Europe, APAC, and the US.
+      <!-- Row 1: Chatbot & Voice -->
+      <div class="ais-showcase-row">
+        <div class="ais-showcase-content reveal">
+          <span class="ais-showcase-eyebrow">01 — Customer Interaction</span>
+          <h2 class="ais-showcase-title">AI Chatbot &amp; Support Automation</h2>
+          <p class="ais-showcase-desc">
+            Your customers get instant, accurate answers — day or night, across every channel.
+            The chatbot handles up to 70% of inbound queries autonomously, escalating only what needs a human.
+            Your support team stops answering the same questions and starts solving real problems.
           </p>
-          <div class="ais-project-results" aria-label="Project results">
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">70%</span>
-              <span class="ais-project-result-label">Support queries automated</span>
-            </div>
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">2×</span>
-              <span class="ais-project-result-label">Recommendation click-through</span>
-            </div>
-          </div>
-          <div class="ais-project-tags">
-            <span class="tech-tag">Magento</span>
-            <span class="tech-tag">LLM</span>
-            <span class="tech-tag">Elasticsearch</span>
-            <span class="tech-tag">Redis</span>
-            <span class="tech-tag">Image Search</span>
-          </div>
-        </div>
-
-        <div class="ais-project-card reveal reveal-delay-2">
-          <div class="ais-project-client">MEKTOUKE</div>
-          <div class="ais-project-type">Social &amp; Dating Platform · Middle East / EU</div>
-          <p class="ais-project-desc">
-            Designed and shipped an AI matching engine that scores compatibility between profiles,
-            a content recommendation system that surfaces relevant posts and connections, and smart
-            search with intent understanding — running across a 10+ engineer team on React Native
-            and NestJS with Kafka for real-time event streaming.
-          </p>
-          <div class="ais-project-results" aria-label="Project results">
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">3×</span>
-              <span class="ais-project-result-label">Match accuracy improvement</span>
-            </div>
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">85%</span>
-              <span class="ais-project-result-label">User retention at 30 days</span>
-            </div>
-          </div>
-          <div class="ais-project-tags">
-            <span class="tech-tag">NestJS</span>
-            <span class="tech-tag">React Native</span>
-            <span class="tech-tag">Kafka</span>
-            <span class="tech-tag">AI Matching</span>
-            <span class="tech-tag">RAG</span>
-          </div>
-        </div>
-
-        <div class="ais-project-card reveal reveal-delay-4">
-          <div class="ais-project-client">Airport Voice AI</div>
-          <div class="ais-project-type">Transportation Client · APAC Region</div>
-          <p class="ais-project-desc">
-            Deployed a voice and chat AI assistant that answers passenger queries in real time —
-            flight status, gate changes, transit connections, and wayfinding directions.
-            Connected to live airport data feeds. Operates 24/7 across physical kiosks, the airport
-            web portal, and the mobile app without any human in the loop.
-          </p>
-          <div class="ais-project-results" aria-label="Project results">
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">−60%</span>
-              <span class="ais-project-result-label">Front-desk query volume</span>
-            </div>
-            <div class="ais-project-result">
-              <span class="ais-project-result-val">24/7</span>
-              <span class="ais-project-result-label">Autonomous operation</span>
-            </div>
-          </div>
-          <div class="ais-project-tags">
-            <span class="tech-tag">WhisperAI</span>
+          <ul class="ais-showcase-list" role="list">
+            <li>Responds instantly across chat, WhatsApp, voice, and web widget</li>
+            <li>Handles FAQs, order tracking, returns, and ticket creation</li>
+            <li>Plugs into CRM, Zendesk, Freshdesk, and custom APIs</li>
+            <li>Understands and replies in 30+ languages out of the box</li>
+          </ul>
+          <div class="tech-tags">
             <span class="tech-tag">LangChain</span>
-            <span class="tech-tag">Live Data API</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">WhisperAI</span>
+            <span class="tech-tag">OpenAI</span>
+          </div>
+        </div>
+        <!-- CSS visual panel: Chat mockup -->
+        <div class="ais-sv ais-sv--chat" aria-hidden="true">
+          <div class="ais-sv-glow ais-sv-glow--green"></div>
+          <div class="ais-sv-kpi">
+            <span class="ais-sv-kpi-num">70%</span>
+            <span class="ais-sv-kpi-text">queries automated</span>
+          </div>
+          <div class="ais-chat-mock">
+            <div class="ais-chat-header">
+              <span class="ais-chat-dot"></span>
+              AI Support — Online
+            </div>
+            <div class="ais-chat-body">
+              <div class="ais-msg ais-msg--user">How do I track my order?</div>
+              <div class="ais-msg ais-msg--ai">Order #12847 is out for delivery and arrives today by 6 PM.</div>
+              <div class="ais-msg ais-msg--user">Can I change the delivery address?</div>
+              <div class="ais-msg ais-msg--ai ais-msg--typing">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Recommendations (reversed) -->
+      <div class="ais-showcase-row ais-showcase-row--rev">
+        <div class="ais-showcase-content reveal">
+          <span class="ais-showcase-eyebrow">02 — Revenue Growth</span>
+          <h2 class="ais-showcase-title">AI Recommendation Engine</h2>
+          <p class="ais-showcase-desc">
+            Every visitor sees different products — ranked by what they're most likely to buy.
+            The engine learns from clicks, purchases, and browsing patterns to improve continuously.
+            For GLAMIRA, this doubled click-through rates across millions of product SKUs globally.
+          </p>
+          <ul class="ais-showcase-list" role="list">
+            <li>Personalized ranking for every user in real time (&lt;100ms response)</li>
+            <li>Combines collaborative filtering and content-based signals</li>
+            <li>Built-in A/B testing so you can measure impact directly</li>
+            <li>Proven in ecommerce, social, and content platforms at scale</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Elasticsearch</span>
+            <span class="tech-tag">FastAPI</span>
+          </div>
+        </div>
+        <!-- CSS visual panel: Recommendation mock -->
+        <div class="ais-sv ais-sv--rec" aria-hidden="true">
+          <div class="ais-sv-glow ais-sv-glow--purple"></div>
+          <div class="ais-sv-kpi">
+            <span class="ais-sv-kpi-num">2×</span>
+            <span class="ais-sv-kpi-text">click-through rate</span>
+          </div>
+          <div class="ais-rec-mock">
+            <div class="ais-rec-header">AI Recommendations — Personalized for you</div>
+            <div class="ais-rec-item">
+              <div class="ais-rec-thumb ais-rec-thumb--1"></div>
+              <div class="ais-rec-info">
+                <div class="ais-rec-name">Diamond Ring — Classic</div>
+                <div class="ais-rec-bar"><span style="width:98%"></span></div>
+                <div class="ais-rec-pct">98% match</div>
+              </div>
+            </div>
+            <div class="ais-rec-item">
+              <div class="ais-rec-thumb ais-rec-thumb--2"></div>
+              <div class="ais-rec-info">
+                <div class="ais-rec-name">Sapphire Pendant</div>
+                <div class="ais-rec-bar"><span style="width:94%"></span></div>
+                <div class="ais-rec-pct">94% match</div>
+              </div>
+            </div>
+            <div class="ais-rec-item">
+              <div class="ais-rec-thumb ais-rec-thumb--3"></div>
+              <div class="ais-rec-info">
+                <div class="ais-rec-name">Gold Bracelet</div>
+                <div class="ais-rec-bar"><span style="width:91%"></span></div>
+                <div class="ais-rec-pct">91% match</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Voice AI / Airport -->
+      <div class="ais-showcase-row">
+        <div class="ais-showcase-content reveal">
+          <span class="ais-showcase-eyebrow">03 — Voice &amp; Conversational AI</span>
+          <h2 class="ais-showcase-title">Voice AI for High-Volume Environments</h2>
+          <p class="ais-showcase-desc">
+            A voice assistant that listens, understands, and responds — live, in any language.
+            Built for environments where staff can't keep up with demand: airports, transit hubs, public services.
+            It cut front-desk query volume by 60% for our APAC transportation client, with zero degradation in service
+            quality.
+          </p>
+          <ul class="ais-showcase-list" role="list">
+            <li>Real-time speech recognition with under 500ms response latency</li>
+            <li>Pulls live data: flight status, gate changes, delays, wayfinding</li>
+            <li>Operates 24/7 at kiosks, mobile apps, and web portals</li>
+            <li>Handles 30+ languages with natural conversation flow</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">WhisperAI</span>
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">WebSockets</span>
             <span class="tech-tag">NestJS</span>
           </div>
         </div>
+        <!-- CSS visual panel: Voice waveform -->
+        <div class="ais-sv ais-sv--voice" aria-hidden="true">
+          <div class="ais-sv-glow ais-sv-glow--blue"></div>
+          <div class="ais-sv-kpi">
+            <span class="ais-sv-kpi-num">−60%</span>
+            <span class="ais-sv-kpi-text">front-desk queries</span>
+          </div>
+          <div class="ais-voice-mock">
+            <div class="ais-voice-icon-wrap">
+              <div class="ais-voice-ring ais-voice-ring--1"></div>
+              <div class="ais-voice-ring ais-voice-ring--2"></div>
+              <div class="ais-voice-icon-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                </svg>
+              </div>
+            </div>
+            <div class="ais-waveform" role="img" aria-label="Voice waveform">
+              <div class="ais-wb" style="--p:8px;  animation-delay:0s"></div>
+              <div class="ais-wb" style="--p:18px; animation-delay:0.08s"></div>
+              <div class="ais-wb" style="--p:28px; animation-delay:0.16s"></div>
+              <div class="ais-wb" style="--p:36px; animation-delay:0.24s"></div>
+              <div class="ais-wb" style="--p:22px; animation-delay:0.32s"></div>
+              <div class="ais-wb" style="--p:40px; animation-delay:0.4s"></div>
+              <div class="ais-wb" style="--p:28px; animation-delay:0.48s"></div>
+              <div class="ais-wb" style="--p:14px; animation-delay:0.56s"></div>
+              <div class="ais-wb" style="--p:32px; animation-delay:0.64s"></div>
+              <div class="ais-wb" style="--p:40px; animation-delay:0.72s"></div>
+              <div class="ais-wb" style="--p:24px; animation-delay:0.8s"></div>
+              <div class="ais-wb" style="--p:18px; animation-delay:0.88s"></div>
+              <div class="ais-wb" style="--p:34px; animation-delay:0.96s"></div>
+              <div class="ais-wb" style="--p:20px; animation-delay:1.04s"></div>
+              <div class="ais-wb" style="--p:12px; animation-delay:1.12s"></div>
+              <div class="ais-wb" style="--p:26px; animation-delay:1.2s"></div>
+            </div>
+            <div class="ais-voice-status">
+              <span class="ais-voice-live"></span>
+              Processing in 30+ languages
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Row 4: Workflow (reversed) -->
+      <div class="ais-showcase-row ais-showcase-row--rev">
+        <div class="ais-showcase-content reveal">
+          <span class="ais-showcase-eyebrow">04 — Internal Operations</span>
+          <h2 class="ais-showcase-title">AI Workflow Automation</h2>
+          <p class="ais-showcase-desc">
+            Every email, ticket, or form submission is read, classified, and routed automatically —
+            no human triage required. The AI extracts what matters, creates the task, assigns it to
+            the right team, and flags exceptions. Processing time drops by 70% on day one.
+          </p>
+          <ul class="ais-showcase-list" role="list">
+            <li>Reads unstructured inputs and converts them to structured, assigned tasks</li>
+            <li>Integrates with CRM, Notion, Jira, N8N, and custom backends</li>
+            <li>Configurable approval gates and escalation rules</li>
+            <li>Full audit trail — every action logged and reportable</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">LLM Agents</span>
+            <span class="tech-tag">N8N</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <!-- CSS visual panel: Workflow flow diagram -->
+        <div class="ais-sv ais-sv--flow" aria-hidden="true">
+          <div class="ais-sv-glow ais-sv-glow--orange"></div>
+          <div class="ais-sv-kpi">
+            <span class="ais-sv-kpi-num">−70%</span>
+            <span class="ais-sv-kpi-text">process time</span>
+          </div>
+          <div class="ais-flow-mock">
+            <div class="ais-fnode">
+              <div class="ais-fnode-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <span>Input</span>
+            </div>
+            <div class="ais-fconn">
+              <div class="ais-fpulse"></div>
+            </div>
+            <div class="ais-fnode ais-fnode--ai">
+              <div class="ais-fnode-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+                </svg>
+              </div>
+              <span>AI Agent</span>
+            </div>
+            <div class="ais-fconn">
+              <div class="ais-fpulse ais-fpulse--d2"></div>
+            </div>
+            <div class="ais-fnode ais-fnode--out">
+              <div class="ais-fnode-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span>Task</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =============================================
+       TRUSTED PARTNERS — trust signal
+       ============================================= -->
+    <div class="clients-strip" aria-label="Trusted by">
+      <p class="clients-strip-label">Trusted Partners</p>
+      <div class="clients-logos">
+        <a href="projects.html" class="client-logo-text" aria-label="GLAMIRA case study">GLAMIRA</a>
+        <a href="projects.html" class="client-logo-text" aria-label="MEKTOUKE case study">MEKTOUKE</a>
+        <a href="projects.html" class="client-logo-text" aria-label="Astek Group case study">ASTEK GROUP</a>
+        <a href="projects.html" class="client-logo-text" aria-label="Toyota case study">TOYOTA</a>
       </div>
     </div>
-  </section>
 
-  <!-- =============================================
+    <!-- =============================================
+       AI TECH CAROUSEL — Latest AI Technologies
+       ============================================= -->
+    <!-- =============================================
+       CORE VALUES — Nguyên tắc định hướng
+       ============================================= -->
+    <section class="section ais-values-section" id="values" aria-label="Core Principles">
+      <!-- Background decoration -->
+      <div class="ais-values-bg" aria-hidden="true">
+        <div class="ais-val-orb ais-val-orb--left"></div>
+        <div class="ais-val-orb ais-val-orb--right"></div>
+        <span class="ais-vbg-dot" style="top:8%;left:6%"></span>
+        <span class="ais-vbg-dot" style="top:15%;left:22%"></span>
+        <span class="ais-vbg-dot" style="top:7%;left:55%"></span>
+        <span class="ais-vbg-dot" style="top:12%;left:80%"></span>
+        <span class="ais-vbg-dot" style="top:19%;left:93%"></span>
+        <span class="ais-vbg-dot" style="top:74%;left:9%"></span>
+        <span class="ais-vbg-dot" style="top:85%;left:34%"></span>
+        <span class="ais-vbg-dot" style="top:70%;left:64%"></span>
+        <span class="ais-vbg-dot" style="top:80%;left:88%"></span>
+        <span class="ais-vbg-dot ais-vbg-dot--lg" style="top:40%;left:3%"></span>
+        <span class="ais-vbg-dot ais-vbg-dot--lg" style="top:50%;left:95%"></span>
+        <span class="ais-vbg-dot ais-vbg-dot--sm" style="top:45%;left:18%"></span>
+        <span class="ais-vbg-dot ais-vbg-dot--sm" style="top:35%;left:82%"></span>
+      </div>
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-label">Our Principles</span>
+          <h2 class="section-title">3 Golden Rules for<br>Businesses Using AI</h2>
+        </div>
+        <div class="ais-values-grid">
+
+          <!-- Card 1: AI Supports People -->
+          <div class="ais-val-card">
+            <div class="ais-val-num" aria-hidden="true">01</div>
+            <div class="ais-val-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+              </svg>
+            </div>
+            <h3 class="ais-val-title">AI Supports People</h3>
+            <p class="ais-val-desc">AI should speed up work, but important decisions still need human review.</p>
+          </div>
+
+          <!-- Card 2: Data Security First -->
+          <div class="ais-val-card">
+            <div class="ais-val-num" aria-hidden="true">02</div>
+            <div class="ais-val-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+            </div>
+            <h3 class="ais-val-title">Data Security First</h3>
+            <p class="ais-val-desc">Do not put sensitive data into AI systems without clear controls and protection.</p>
+          </div>
+
+          <!-- Card 3: Clear Business Goals -->
+          <div class="ais-val-card">
+            <div class="ais-val-num" aria-hidden="true">03</div>
+            <div class="ais-val-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3 class="ais-val-title">Clear Business Goals</h3>
+            <p class="ais-val-desc">Use AI only when it saves time, reduces costs, or improves performance.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
        HOW IT WORKS — Horizontal 4-step box
        ============================================= -->
-  <section class="section" id="how-it-works" aria-label="Implementation process">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-label">Our Process</span>
-        <h2 class="section-title">Four steps from first call<br>to a live AI system</h2>
+    <section class="section" id="how-it-works" aria-label="Implementation process">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-label">Our Process</span>
+          <h2 class="section-title">Four steps from first call<br>to a live AI system</h2>
+        </div>
+        <!-- Process flow diagram -->
+        <div class="ais-proc" role="list" aria-label="Four-step implementation process">
+
+          <!-- Endpoint: First Call -->
+          <div class="ais-proc-ep ais-proc-ep--start" aria-label="Start: First Call">
+            <div class="ais-proc-ep-dot">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+              </svg>
+            </div>
+            <span class="ais-proc-ep-label">First Call</span>
+          </div>
+
+          <!-- Connector -->
+          <div class="ais-proc-conn" aria-hidden="true">
+            <svg viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ais-proc-conn-svg">
+              <line x1="0" y1="8" x2="38" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M36 3l8 5-8 5V3z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Step 01 -->
+          <div class="ais-proc-node" role="listitem">
+            <div class="ais-proc-node-head">
+              <div class="ais-proc-node-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/>
+                </svg>
+              </div>
+              <span class="ais-proc-node-num">01</span>
+            </div>
+            <h3 class="ais-proc-node-title">Audit &amp; Prioritize</h3>
+            <ul class="ais-proc-node-pts">
+              <li>Map workflows &amp; bottlenecks</li>
+              <li>Rank automation opportunities</li>
+              <li>ROI projection per use case</li>
+            </ul>
+            <div class="ais-proc-node-out">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Ranked roadmap
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="ais-proc-conn" aria-hidden="true">
+            <svg viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ais-proc-conn-svg">
+              <line x1="0" y1="8" x2="38" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M36 3l8 5-8 5V3z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="ais-proc-node" role="listitem">
+            <div class="ais-proc-node-head">
+              <div class="ais-proc-node-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/>
+                </svg>
+              </div>
+              <span class="ais-proc-node-num">02</span>
+            </div>
+            <h3 class="ais-proc-node-title">Design the System</h3>
+            <ul class="ais-proc-node-pts">
+              <li>Define use cases &amp; data flows</li>
+              <li>Scope integration points</li>
+              <li>Agree spec before code starts</li>
+            </ul>
+            <div class="ais-proc-node-out">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Technical spec signed off
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="ais-proc-conn" aria-hidden="true">
+            <svg viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ais-proc-conn-svg">
+              <line x1="0" y1="8" x2="38" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M36 3l8 5-8 5V3z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="ais-proc-node" role="listitem">
+            <div class="ais-proc-node-head">
+              <div class="ais-proc-node-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+                </svg>
+              </div>
+              <span class="ais-proc-node-num">03</span>
+            </div>
+            <h3 class="ais-proc-node-title">Build &amp; Integrate</h3>
+            <ul class="ais-proc-node-pts">
+              <li>LLMs, RAG &amp; APIs wired in</li>
+              <li>Zero-downtime deployment</li>
+              <li>Full documentation handover</li>
+            </ul>
+            <div class="ais-proc-node-out">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Live in production
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="ais-proc-conn" aria-hidden="true">
+            <svg viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ais-proc-conn-svg">
+              <line x1="0" y1="8" x2="38" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M36 3l8 5-8 5V3z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="ais-proc-node" role="listitem">
+            <div class="ais-proc-node-head">
+              <div class="ais-proc-node-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+                </svg>
+              </div>
+              <span class="ais-proc-node-num">04</span>
+            </div>
+            <h3 class="ais-proc-node-title">Measure &amp; Scale</h3>
+            <ul class="ais-proc-node-pts">
+              <li>Track accuracy &amp; cost savings</li>
+              <li>Retrain on real usage data</li>
+              <li>Expand to next use case</li>
+            </ul>
+            <div class="ais-proc-node-out">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              Continuous improvement
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="ais-proc-conn" aria-hidden="true">
+            <svg viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ais-proc-conn-svg">
+              <line x1="0" y1="8" x2="38" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M36 3l8 5-8 5V3z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Endpoint: Live AI -->
+          <div class="ais-proc-ep ais-proc-ep--end" aria-label="End: Live AI System">
+            <div class="ais-proc-ep-dot ais-proc-ep-dot--end">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+              </svg>
+            </div>
+            <span class="ais-proc-ep-label">Live AI</span>
+          </div>
+
+        </div>
       </div>
-      <div class="ais-steps-h">
+    </section>
 
-        <div class="ais-step-h">
-          <div class="ais-step-h-num">01</div>
-          <div class="ais-step-h-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
-          </div>
-          <h3 class="ais-step-h-title">Audit &amp; Prioritize</h3>
-          <p class="ais-step-h-desc">We walk through your workflows and surface which bottlenecks cost the most — in time, headcount, or errors. You get a ranked automation roadmap with specific ROI projections, not generic advice.</p>
-        </div>
-
-        <div class="ais-step-h">
-          <div class="ais-step-h-num">02</div>
-          <div class="ais-step-h-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
-          </div>
-          <h3 class="ais-step-h-title">Design the System</h3>
-          <p class="ais-step-h-desc">We define exactly what the AI will do, what data it will use, and where it connects to your stack. Use cases, data flows, and integration points are scoped and agreed before any code is written.</p>
-        </div>
-
-        <div class="ais-step-h">
-          <div class="ais-step-h-num">03</div>
-          <div class="ais-step-h-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
-          </div>
-          <h3 class="ais-step-h-title">Build &amp; Integrate</h3>
-          <p class="ais-step-h-desc">LLMs, RAG pipelines, and APIs — wired into your CRMs, ERPs, and databases. Your existing infrastructure stays untouched. We deploy with zero downtime and hand over with full documentation.</p>
-        </div>
-
-        <div class="ais-step-h">
-          <div class="ais-step-h-num">04</div>
-          <div class="ais-step-h-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
-          </div>
-          <h3 class="ais-step-h-title">Measure &amp; Scale</h3>
-          <p class="ais-step-h-desc">Accuracy, throughput, and cost savings are instrumented from day one. We monitor performance on real usage, retrain where needed, and expand to the next use case once the first proves out.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
+    <!-- =============================================
        WHY US — 5 differentiator cards
        ============================================= -->
-  <section class="section section-dark" id="why-us" aria-label="Why Open Techiz">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Why Open Techiz</span>
-        <h2 class="section-title">Why companies choose us<br>over off-the-shelf AI tools</h2>
+    <section class="section section-dark" id="why-us" aria-label="Why Open Techiz">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-label">Why Open Techiz</span>
+          <h2 class="section-title">Why companies choose us<br>over off-the-shelf AI tools</h2>
+        </div>
+        <div class="ais-why-grid">
+
+          <div class="ais-why-card reveal">
+            <div class="ais-why-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+              </svg>
+            </div>
+            <h3 class="ais-why-title">Outcome-first, not model-first</h3>
+            <p class="ais-why-desc">We define the business goal — then work backwards to the right AI.</p>
+          </div>
+
+          <div class="ais-why-card reveal reveal-delay-1">
+            <div class="ais-why-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+              </svg>
+            </div>
+            <h3 class="ais-why-title">Live in weeks, not quarters</h3>
+            <p class="ais-why-desc">First system ships in 3–6 weeks. Results fund the next phase.</p>
+            <span class="ais-why-badge">3–6 weeks</span>
+          </div>
+
+          <div class="ais-why-card reveal reveal-delay-2">
+            <div class="ais-why-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
+              </svg>
+            </div>
+            <h3 class="ais-why-title">Your stack stays intact</h3>
+            <p class="ais-why-desc">AI layered on top of your CRM, ERP, and databases — nothing replaced.</p>
+          </div>
+
+          <div class="ais-why-card reveal reveal-delay-3">
+            <div class="ais-why-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/>
+              </svg>
+            </div>
+            <h3 class="ais-why-title">Custom-built, not templated</h3>
+            <p class="ais-why-desc">Trained on your data and workflows — not a generic off-the-shelf model.</p>
+          </div>
+
+          <div class="ais-why-card reveal reveal-delay-4">
+            <div class="ais-why-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+              </svg>
+            </div>
+            <h3 class="ais-why-title">Engineered to run at scale</h3>
+            <p class="ais-why-desc">Serving millions in production across e-commerce, enterprise, and SaaS.</p>
+            <span class="ais-why-badge">Production-grade</span>
+          </div>
+
+        </div>
       </div>
-      <div class="ais-why-grid">
+    </section>
 
-        <div class="ais-why-card reveal">
-          <div class="ais-why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
-          </div>
-          <h3 class="ais-why-title">We start with the business problem</h3>
-          <p class="ais-why-desc">Every engagement starts with a specific outcome — reduce support cost, increase revenue per visitor, cut processing time — then works backwards to the right AI. We don't recommend models for their own sake.</p>
-        </div>
-
-        <div class="ais-why-card reveal reveal-delay-1">
-          <div class="ais-why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-          </div>
-          <h3 class="ais-why-title">Live in weeks, not quarters</h3>
-          <p class="ais-why-desc">Your first AI system goes live in 3–6 weeks. We scope tightly, build the highest-impact use case first, and let the results fund the next phase — no large upfront commitment required.</p>
-        </div>
-
-        <div class="ais-why-card reveal reveal-delay-2">
-          <div class="ais-why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
-          </div>
-          <h3 class="ais-why-title">Your stack stays intact</h3>
-          <p class="ais-why-desc">No ripping out your CRM, ERP, or database. We connect AI to what you already run — Salesforce, HubSpot, Zendesk, Jira, custom APIs — and add intelligence on top without disrupting existing workflows.</p>
-        </div>
-
-        <div class="ais-why-card reveal reveal-delay-3">
-          <div class="ais-why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/></svg>
-          </div>
-          <h3 class="ais-why-title">Custom-built, not templated</h3>
-          <p class="ais-why-desc">Generic AI tools underperform because they don't know your data, your customers, or your edge cases. We build each system for your specific workflow — which is why our deployments consistently outperform out-of-the-box solutions.</p>
-        </div>
-
-        <div class="ais-why-card reveal reveal-delay-4">
-          <div class="ais-why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-          </div>
-          <h3 class="ais-why-title">Engineered to run at scale</h3>
-          <p class="ais-why-desc">Our AI systems serve millions of users in production — across global ecommerce, social platforms, and enterprise operations in Europe, APAC, and the US. Not prototypes. Scalable, monitored, production-grade architecture.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
+    <!-- =============================================
        FAQ — Accordion
        ============================================= -->
-  <section class="section" id="faq" aria-label="Frequently asked questions">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-label">FAQ</span>
-        <h2 class="section-title">Questions we get asked most</h2>
+    <section class="section" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Questions we get asked most</h2>
+        </div>
+        <div class="ais-faq" role="list">
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-1">
+              Is AI the right fit for my business right now?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-1" role="region">
+              <div class="ais-faq-answer-inner">
+                If you have repetitive processes, high-volume customer interaction, or data-heavy internal workflows —
+                yes. The clearer the pattern, the faster AI delivers results. We'll tell you honestly if the timing or
+                use case isn't right for AI yet — we'd rather do this properly than over-promise.
+              </div>
+            </div>
+          </div>
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-2">
+              Do I need a large dataset to get started?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-2" role="region">
+              <div class="ais-faq-answer-inner">
+                No. RAG-based systems work well with existing documentation, past support tickets, product catalogs, or
+                process descriptions. We start with what you have and improve over time.
+              </div>
+            </div>
+          </div>
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-3">
+              How fast can we go live?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-3" role="region">
+              <div class="ais-faq-answer-inner">
+                A focused first use case — chatbot, recommendation module, or workflow automation — typically deploys in
+                3–6 weeks depending on integration complexity.
+              </div>
+            </div>
+          </div>
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-4">
+              Will it work with our existing tools and systems?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-4" role="region">
+              <div class="ais-faq-answer-inner">
+                Yes. We integrate with REST APIs, GraphQL, Salesforce, HubSpot, Zendesk, Notion, Jira, custom databases,
+                and legacy systems. No migration needed — we layer AI on top of what you already have.
+              </div>
+            </div>
+          </div>
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-5">
+              What about accuracy? What if the AI gives wrong answers?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-5" role="region">
+              <div class="ais-faq-answer-inner">
+                We use RAG (Retrieval-Augmented Generation) to anchor every response to your actual data — not
+                guesswork. We also build explicit fallback and escalation flows so the AI hands off gracefully when it
+                isn't confident. Every response is logged, and we retrain on real errors so accuracy improves over time
+                rather than drifting.
+              </div>
+            </div>
+          </div>
+
+          <div class="ais-faq-item" role="listitem">
+            <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-6">
+              How do you guarantee ROI within 90 days?
+              <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="ais-faq-answer" id="faq-6" role="region">
+              <div class="ais-faq-answer-inner">
+                We start with small, measurable use cases — reduced support hours, faster processing, lower error rates.
+                Performance is instrumented from day one so savings are visible immediately. We don't move to the next
+                phase until the first one proves out.
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="ais-faq" role="list">
+    </section>
 
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-1">
-            Is AI the right fit for my business right now?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-1" role="region">
-            <div class="ais-faq-answer-inner">
-              If you have repetitive processes, high-volume customer interaction, or data-heavy internal workflows — yes. The clearer the pattern, the faster AI delivers results. We'll tell you honestly if the timing or use case isn't right for AI yet — we'd rather do this properly than over-promise.
-            </div>
-          </div>
-        </div>
-
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-2">
-            Do I need a large dataset to get started?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-2" role="region">
-            <div class="ais-faq-answer-inner">
-              No. RAG-based systems work well with existing documentation, past support tickets, product catalogs, or process descriptions. We start with what you have and improve over time.
-            </div>
-          </div>
-        </div>
-
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-3">
-            How fast can we go live?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-3" role="region">
-            <div class="ais-faq-answer-inner">
-              A focused first use case — chatbot, recommendation module, or workflow automation — typically deploys in 3–6 weeks depending on integration complexity.
-            </div>
-          </div>
-        </div>
-
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-4">
-            Will it work with our existing tools and systems?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-4" role="region">
-            <div class="ais-faq-answer-inner">
-              Yes. We integrate with REST APIs, GraphQL, Salesforce, HubSpot, Zendesk, Notion, Jira, custom databases, and legacy systems. No migration needed — we layer AI on top of what you already have.
-            </div>
-          </div>
-        </div>
-
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-5">
-            What about accuracy? What if the AI gives wrong answers?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-5" role="region">
-            <div class="ais-faq-answer-inner">
-              We use RAG (Retrieval-Augmented Generation) to anchor every response to your actual data — not guesswork. We also build explicit fallback and escalation flows so the AI hands off gracefully when it isn't confident. Every response is logged, and we retrain on real errors so accuracy improves over time rather than drifting.
-            </div>
-          </div>
-        </div>
-
-        <div class="ais-faq-item" role="listitem">
-          <button class="ais-faq-trigger" aria-expanded="false" aria-controls="faq-6">
-            How do you guarantee ROI within 90 days?
-            <svg class="ais-faq-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="ais-faq-answer" id="faq-6" role="region">
-            <div class="ais-faq-answer-inner">
-              We start with small, measurable use cases — reduced support hours, faster processing, lower error rates. Performance is instrumented from day one so savings are visible immediately. We don't move to the next phase until the first one proves out.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
+    <!-- =============================================
        FINAL CTA
        ============================================= -->
-  <section class="ais-final-cta" aria-label="Get started">
-    <div class="container">
-      <span class="section-label" style="justify-content:center;">Get Started</span>
-      <h2 class="section-title">Tell us your bottleneck.<br>We'll show you the AI fix.</h2>
-      <p class="section-subtitle">
-        Book a 30-minute discovery call. We'll identify the highest-impact AI use case
-        for your operation and show you what a real deployment looks like — with numbers, not slides.
-      </p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn-grad">Book a Free Discovery Call</a>
-        <a href="mailto:hoanv@opentechiz.com" class="btn btn-outline">Email us directly</a>
+    <section class="ais-final-cta" aria-label="Get started">
+      <div class="container">
+        <span class="section-label" style="justify-content:center;">Get Started</span>
+        <h2 class="section-title">Tell us your bottleneck.<br>We'll show you the AI fix.</h2>
+        <p class="section-subtitle">
+          Book a 30-minute discovery call. We'll identify the highest-impact AI use case
+          for your operation and show you what a real deployment looks like — with numbers, not slides.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-grad">Book a Free Discovery Call</a>
+          <a href="mailto:hoanv@opentechiz.com" class="btn btn-outline">Email us directly</a>
+        </div>
+        <p class="ais-final-trust">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          No commitment &nbsp;&middot;&nbsp; Response within 24 hours &nbsp;&middot;&nbsp; First call is free
+        </p>
       </div>
-      <p class="ais-final-trust">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        No commitment &nbsp;&middot;&nbsp; Response within 24 hours &nbsp;&middot;&nbsp; First call is free
-      </p>
-    </div>
-  </section>
+    </section>
 
   </main>
 
@@ -785,11 +965,11 @@
   <script src="js/main.js"></script>
   <script>
     // FAQ accordion
-    document.querySelectorAll('.ais-faq-trigger').forEach(function(trigger) {
-      trigger.addEventListener('click', function() {
+    document.querySelectorAll('.ais-faq-trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
         var item = trigger.closest('.ais-faq-item');
         var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.ais-faq-item.open').forEach(function(el) {
+        document.querySelectorAll('.ais-faq-item.open').forEach(function (el) {
           el.classList.remove('open');
           el.querySelector('.ais-faq-trigger').setAttribute('aria-expanded', 'false');
         });
@@ -801,13 +981,13 @@
     });
 
     // Mobile sticky CTA
-    (function() {
+    (function () {
       if (window.matchMedia('(max-width: 768px)').matches) {
         var mobileCta = document.getElementById('mobileCta');
         var impactBar = document.querySelector('.ais-impact-bar');
         if (mobileCta && impactBar) {
-          new IntersectionObserver(function(entries) {
-            entries.forEach(function(e) {
+          new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
               if (e.isIntersecting) {
                 mobileCta.classList.add('visible');
                 mobileCta.setAttribute('aria-hidden', 'false');
@@ -819,4 +999,5 @@
     })();
   </script>
 </body>
+
 </html>
