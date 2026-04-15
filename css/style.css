@@ -229,6 +229,44 @@ html.light .theme-toggle .icon-sun {
   display: none;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 34px;
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  padding: 0 4px;
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.lang-opt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 14px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all var(--transition);
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.lang-opt:hover {
+  color: var(--accent);
+}
+
+.lang-opt.active {
+  color: var(--text-primary);
+  font-weight: 800;
+  background: var(--border-light);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
